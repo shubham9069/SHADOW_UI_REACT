@@ -1,0 +1,70 @@
+.shadow-accordion-container {
+  .p-accordion {
+    .p-accordion-header {
+      .p-accordion-header-text{
+        max-width: var(--shadow-accordion-header-content-max-width);
+      }
+      .p-accordion-header-link {
+        padding: var(--shadow-accordion-header-link-padding);
+        color: var(--shadow-accordion-header-link-color);
+        border: var(--shadow-accordion-header-link-border);
+        border-radius: var(--shadow-accordion-header-link-border-radius);
+        background-color: var(--shadow-accordion-header-link-bg-color);
+        &:focus {
+          box-shadow: var(--shadow-accordion-header-link-box-shadow-focus);
+        }
+        .p-accordion-toggle-icon {
+          margin-right: var(--shadow-accordion-toggle-icon-margin-right);
+          font-size: var(--shadow-accordion-toggle-icon-font-size);
+        }
+        .p-accordion-toggle-icon-end {
+          font-size: var(--shadow-accordion-toggle-icon-end);
+        }
+        .accordion-header {
+          display: flex;
+          align-items: center;
+          gap: var(--shadow-accordion-header-content-gap);
+          .header-start-icon {
+            font-size: var(--shadow-accordion-header-start-icon-font-size);
+          }
+          .headerContent {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .header-title {
+              margin-bottom: var(--shadow-accordion-header-title-margin-bottom);
+              font-size: var(--shadow-accordion-header-title-font-size);
+              font-weight: var(--shadow-accordion-header-title-font-weight);
+              line-height: var(--shadow-accordion-header-title-line-height);
+              color: var(--shadow-accordion-header-title-color);
+            }
+            .header-subtitle {
+              font-size: var(--shadow-accordion-header-subtitle-font-size);
+              font-weight: var(--shadow-accordion-header-subtitle-font-weight);
+              line-height: var(--shadow-accordion-header-subtitle-line-height);
+              color: var(--shadow-accordion-header-subtitle-color);
+            }
+          }
+          .right-side-icon {
+            position: absolute;
+            font-size: var(--shadow-accordion-header-right-side-icon-font-size);
+            right: var(--shadow-accordion-header-right-side-icon-right);
+          }
+
+          &.end {
+            .right-side-icon {
+              right: var(--shadow-accordion-header-right-side-icon-with-toggle-icon-end);
+            }
+          }
+        }
+      }
+    }
+
+    .header-icon-right .p-accordion-header-link .p-accordion-toggle-icon {
+      margin-top: -8px;
+      position: absolute;
+      right: 0.5em;
+      top: 50%;
+    }
+  }
+}

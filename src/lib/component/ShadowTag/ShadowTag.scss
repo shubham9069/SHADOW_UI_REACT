@@ -1,0 +1,52 @@
+.tag-conatiner {
+  cursor: pointer;
+
+  .primary {
+    background: var(--shadow-tag-primary-background);
+    color: var(--shadow-tag-primary-text-color);
+    font-size: var(--shadow-tag-font-size);
+    font-weight: var(--shadow-tag-font-weight);
+  }
+
+  .secondary {
+    background: var(--shadow-tag-secondary-background);
+    color: var(--shadow-tag-secondary-text-color);
+    font-size: var(--shadow-tag-font-size);
+    font-weight: var(--shadow-tag-font-weight);
+  }
+
+  .info {
+    background: var(--shadow-tag-info-background);
+    color: var(--shadow-tag-info-text-color);
+    font-size: var(--shadow-tag-font-size);
+    font-weight: var(--shadow-tag-font-weight);
+  }
+
+  .success {
+    background: var(--shadow-tag-success-background);
+    color: var(--shadow-tag-success-text-color);
+    font-size: var(--shadow-tag-font-size);
+    font-weight: var(--shadow-tag-font-weight);
+  }
+
+  .alert {
+    background: var(--shadow-tag-alert-background);
+    color: var(--shadow-tag-alert-text-color);
+    font-size: var(--shadow-tag-font-size);
+    font-weight: var(--shadow-tag-font-weight);
+  }
+
+  .danger {
+    background: var(--shadow-tag-danger-background);
+    color: var(--shadow-tag-danger-text-color);
+    font-size: var(--shadow-tag-font-size);
+    font-weight: var(--shadow-tag-font-weight);
+  }
+
+  .neutral {
+    background: var(--shadow-tag-neutral-background);
+    color: var(--shadow-tag-neutral-text-color);
+    font-size: var(--shadow-tag-font-size);
+    font-weight: var(--shadow-tag-font-weight);
+  }
+}

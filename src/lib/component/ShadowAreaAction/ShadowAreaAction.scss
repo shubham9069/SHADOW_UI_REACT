@@ -1,0 +1,15 @@
+.shadow-area-action-container {
+  border-radius: var(--shadow-area-action-border-radius);
+  border: var(--shadow-area-action-border);
+  padding: var(--shadow-area-action-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--shadow-area-action-section-gap);
+  p {
+    font-weight: var(--shadow-area-action-title-weight);
+  }
+  .area-action-btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+}

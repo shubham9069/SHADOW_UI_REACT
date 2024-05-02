@@ -1,0 +1,96 @@
+.shadow-banner-container {
+  align-items: center;
+
+  .close-icon-only {
+    .p-message-wrapper {
+      justify-content: center;
+      .message-wrapper {
+        margin: var(--shadow-banner-closeIcon-message-wrapper-margin);
+      }
+    }
+  }
+  .title {
+    font-size: var(--shadow-banner-font-size);
+    font-weight: var(--shadow-banner-font-weight);
+    line-height: var(--shadow-banner-line-height);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .group-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .p-message-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--shadow-banner-padding);
+    max-height: var(--shadow-banner-max-height);
+  }
+
+  .content {
+    font-size: var(--shadow-banner-spacing);
+    line-height: var(--shadow-banner-content-line-height);
+    overflow: hidden;
+  }
+
+  .message-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .icon-container {
+    display: flex;
+    margin-right: var(--shadow-banner-icon-margin-right);
+    .pi {
+      font-size: var(--shadow-banner-icon-font-size);
+    }
+  }
+
+  .content-container {
+    max-height: var(--shadow-banner-max-height);
+    overflow: hidden;
+  }
+  .closableIcon {
+    cursor: pointer;
+    margin: var(--shadow-banner-closableIcon-margin);
+    color: var(--shadow-banner-times-icon) !important;
+    font-size: var(--shadow-banner-close-icon-font-size);
+    border-radius: 50%;
+    padding: 0.5rem;
+    &:hover {
+      background: #e7ecf1;
+    }
+  }
+  .p-message {
+    border-left: unset !important;
+    &.p-message-error {
+      background: var(--shadow-banner-surface-subtle-error);
+      border-bottom:  solid var(--shadow-banner-surface-error);
+      color: var(--shadow-banner-text-on-subtle-error);
+      border-radius: unset;
+    }
+    &.p-message-warn {
+      background: var(--shadow-banner-surface-subtle-warning) !important;
+      border-bottom: solid var(--shadow-banner-surface-warning) !important;
+      color: var(--shadow-banner-text-on-subtle-warning) !important;
+      border-radius: unset;
+    }
+    &.p-message-info {
+      background: var(--shadow-banner-surface-subtle-primary) !important;
+      border-bottom: solid var(--shadow-banner-surface-primary) !important;
+      color: var(--shadow-banner-text-on-subtle-primary) !important;
+      border-radius: unset;
+    }
+    &.p-message-success {
+      background: var(--shadow-banner-surface-subtle-success) !important;
+      border-bottom: solid var(--shadow-banner-surface-success) !important;
+      color: var(--shadow-banner-text-on-subtle-success) !important;
+      border-radius: unset;
+    }
+  }
+}

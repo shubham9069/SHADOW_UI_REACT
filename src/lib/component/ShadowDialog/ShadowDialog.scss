@@ -1,0 +1,165 @@
+.shadow-dialog-modal {
+  max-width: var(--shadow-dialog-max-width);
+  max-height: var(--shadow-dialog-max-height);
+
+  &.dialog-mode-notification {
+    .p-dialog-content,
+    .p-dialog-header,
+    .p-dialog-footer {
+      background-color: var(--shadow-dialog-notification-bg-color);
+      color: var(--shadow-dialog-notification-text-color);
+    }
+  }
+  
+  &.dialog-mode-primary {
+    background-color: var(--shadow-dialog-default-bg-color);
+    color: var(--shadow-dialog-default-text-color);
+
+    .dialog-title {
+      color: var(--shadow-dialog-default-text-color);
+    }
+
+    .dialog-subtitle {
+      color: var(--shadow-dialog-default-subtitle-color);
+    }
+  }
+
+  .p-dialog-content {
+    border-radius: var(--shadow-dialog-min-padding);
+  }
+
+  &.shadow-dialog-no-footer {
+    .p-dialog-content {
+      border-radius: var(--shadow-dialog-min-border-radius) var(--shadow-dialog-min-border-radius) var(--shadow-dialog-border-radius)
+        var(--shadow-dialog-border-radius);
+    }
+  }
+
+  &.shadow-dialog-no-header {
+    .p-dialog-content {
+      border-radius: var(--shadow-dialog-border-radius) var(--shadow-dialog-border-radius) var(--shadow-dialog-min-border-radius)
+        var(--shadow-dialog-min-border-radius);
+    }
+  }
+
+  &.shadow-dialog-no-footer.shadow-dialog-no-header {
+    .p-dialog-content {
+      border-radius: var(--shadow-dialog-border-radius);
+    }
+  }
+
+  .p-dialog-header {
+    padding: var(--shadow-dialog-header-padding);
+
+    .shadow-dialog-header-container {
+      padding: var(--shadow-dialog-default-padding);
+      display: inline-flex;
+      align-items: center;
+
+      .header-icon {
+        padding-right: var(--shadow-dialog-header-icon-padding-right);
+
+        img {
+          height: var(--shadow-dialog-default-image-height);
+          width: var(--shadow-dialog-default-image-width);
+        }
+      }
+
+      .shadow-dialog-title-container {
+        display: grid;
+        margin-right: auto;
+
+        .dialog-title {
+          font-size: var(--shadow-dialog-title-font-size);
+          line-height: var(--shadow-dialog-title-line-height);
+          font-weight: var(--shadow-dialog-title-font-weight);
+        }
+
+        .dialog-subtitle {
+          font-size: var(--shadow-dialog-subtitle-font-size);
+          line-height: var(--shadow-dialog-subtitle-line-height);
+          padding-top: var(--shadow-dialog-subtitle-padding);
+        }
+      }
+    }
+  }
+
+  .p-dialog-content {
+    padding: var(--shadow-dialog-default-padding);
+    font-size: var(--shadow-dialog-body-font-size);
+
+    .text-success {
+      color: #0f4728;
+    }
+
+    .text-info {
+      color: #3377de;
+    }
+
+    .text-error {
+      color: #dc3545;
+    }
+  }
+
+  &.shadow-dialog-no-padding .p-dialog-content {
+    padding-left: var(--shadow-dialog-min-padding) !important;
+    padding-right: var(--shadow-dialog-min-padding) !important;
+  }
+
+  .p-dialog-footer {
+    padding: var(--shadow-dialog-min-padding);
+
+    .footer {
+      border-radius: var(--shadow-dialog-min-border-radius) var(--shadow-dialog-min-border-radius) var(--shadow-dialog-border-radius)
+        var(--shadow-dialog-border-radius);
+      padding: var(--shadow-dialog-default-padding);
+
+      img {
+        height: var(--shadow-dialog-default-image-height);
+        width: var(--shadow-dialog-default-image-width);
+      }
+    }
+  }
+
+  .p-dialog-header-icons {
+    margin: var(--shadow-dialog-default-padding);
+  }
+
+  .footer {
+    display: inline-flex;
+    width: var(--shadow-dialog-footer-width);
+    align-items: center;
+
+    .footer-text {
+      font-size: var(--shadow-dialog-footer-font-size);
+      padding-left: var(--shadow-dialog-default-padding);
+    }
+
+    .footer-buttons {
+      margin-left: auto;
+      display: inline-flex;
+    }
+  }
+
+  .custom-footer {
+    display: inline-flex;
+  }
+}
+
+.shadow-dialog-custom-position {
+  justify-content: unset !important;
+  align-items: normal !important;
+}
+
+.shadow-dialog-custom-position {
+  justify-content: unset !important;
+  align-items: normal !important;
+}
+
+.p-dialog-header-close {
+  &:focus {
+    outline: 0 none !important;
+    outline-offset: 0 !important;
+    box-shadow: 0 0 0 0.2rem #a8dfff !important;
+  }
+}

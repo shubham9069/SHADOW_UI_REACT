@@ -1,0 +1,28 @@
+.badge-container {
+  .p-badge-danger {
+    background-color: var(--shadow-badge-danger-background) !important;
+  }
+  .p-badge {
+    font-size: var(--shadow-badge-small-font-size);
+    font-weight: var(--shadow-badge-font-size);
+    min-width: var(--shadow-badge-small-min-width);
+    height: var(--shadow-badge-small-height);
+    line-height: var(--shadow-badge-small-line-height);
+    font-family: var(--default-font);
+    &[class*="p-badge-lg"] {
+      font-size: var(--shadow-badge-small-font-size);
+      font-weight: var(--shadow-badge-font-size);
+      min-width: var(--shadow-badge-large-min-width);
+      height: var(--shadow-badge-large-height);
+      line-height: var(--shadow-badge-large-line-height);
+    }
+
+    &[class*="p-badge-xl"] {
+      font-size: var(--shadow-badge-xlarge-font-size);
+      font-weight: var(--shadow-badge-font-size);
+      min-width: var(--shadow-badge-xlarge-min-width);
+      height: var(--shadow-badge-xlarge-height);
+      line-height: var(--shadow-badge-xlarge-line-height);
+    }
+  }
+}

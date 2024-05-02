@@ -1,0 +1,67 @@
+.shadow-tiered-menu {
+  .icon-menu-btn {
+    height: var(--shadow-menu-icon-height);
+    width: var(--shadow-menu-icon-width);
+    padding: var(--shadow-menu-icon-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--shadow-menu-btn-border-radius);
+    &:hover {
+      background: var(--shadow-menu-item-hover-background);
+    }
+    &:focus {
+      background: var(--shadow-menu-icon-background);
+      i {
+        color: var(--shadow-menu-icon-color);
+      }
+    }
+  }
+}
+
+
+.p-tieredmenu .p-menuitem.danger .p-menuitem-text,
+.p-tieredmenu .p-menuitem.danger .p-menuitem-icon,
+.p-tieredmenu .p-menuitem.danger.p-menuitem-active > .p-menuitem-link .p-menuitem-text,
+.p-tieredmenu .p-menuitem.danger.p-menuitem-active > .p-menuitem-link .p-menuitem-icon {
+  color: var(--shadow-menu-item-link-color-dander);
+}
+.p-tieredmenu .p-menuitem.warning .p-menuitem-text,
+.p-tieredmenu .p-menuitem.warning .p-menuitem-icon,
+.p-tieredmenu .p-menuitem.warning.p-menuitem-active > .p-menuitem-link .p-menuitem-text,
+.p-tieredmenu .p-menuitem.warning.p-menuitem-active > .p-menuitem-link .p-menuitem-icon {
+  color: var(--shadow-menu-item-link-color-warning);
+}
+
+.p-tieredmenu .p-menuitem-link .p-icon-wrapper {
+  margin-left: auto;
+}
+.p-tieredmenu .p-menuitem-link {
+  padding: var(--shadow-menu-item-padding);
+  font-size: var(--shadow-menu-item-font-size);
+  min-height: var(--shadow-menu-item-min-height);
+}
+.p-tieredmenu .p-menuitem-link .p-menuitem-text {
+  color: var(--shadow-menu-item-color);
+}
+.p-tieredmenu .p-menuitem-link .p-menuitem-icon {
+  color: var(--shadow-menu-item-icon-color);
+  font-size: var(--shadow-menu-item-font-size);
+}
+.p-tieredmenu .p-menuitem.p-menuitem-active > .p-menuitem-link {
+  background: var(--shadow-menu-item-hover-background);
+}
+
+.p-tieredmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-icon,
+.p-tieredmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-submenu-icon {
+  color: var(--shadow-menu-item-icon-color);
+}
+
+.p-tieredmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text {
+  color: var(--shadow-menu-item-color);
+}

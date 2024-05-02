@@ -1,0 +1,67 @@
+.shadow-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: var(--shadow-checkbox-gap);
+  .text {
+    font-size: var(--shadow-checkbox-text-font-size);
+    font-weight: var(--shadow-checkbox-text-font-weight);
+    line-height: var(--shadow-checkbox-text-line-height);
+    color: var(--shadow-checkbox-text-color);
+  }
+  .p-checkbox {
+    width: var(--shadow-checkbox-width);
+    height: var(--shadow-checkbox-height);
+
+    .p-checkbox-box {
+      border: var(--shadow-checkbox-border);
+      border-radius: var(--shadow-checkbox-border-radius);
+      width: var(--shadow-checkbox-width);
+      height: var(--shadow-checkbox-height);
+      &.p-highlight {
+        background-color: var(--shadow-checkbox-highlight-bg-color);
+        border-color: var(--shadow-checkbox-highlight-bg-color);
+      }
+    }
+    &:not(.p-checkbox-disabled) {
+      .p-checkbox-box {
+        &.p-highlight:hover {
+          background-color: var(--shadow-checkbox-highlight-bg-color);
+          border-color: var(--shadow-checkbox-highlight-bg-color);
+        }
+        &:hover {
+          border-color: var(--shadow-checkbox-highlight-bg-color);
+        }
+        &.p-focus {
+          box-shadow: none;
+          border-color: var(--shadow-checkbox-highlight-bg-color);
+        }
+      }
+    }
+  }
+
+  .error {
+    .p-checkbox-box {
+      border: var(--shadow-checkbox-error-border);
+      &.p-highlight {
+        background-color: var(--shadow-checkbox-error-border-color);
+        border-color: var(--shadow-checkbox-error-border-color);
+      }
+    }
+
+    &:not(.p-checkbox-disabled) {
+      .p-checkbox-box {
+        &.p-highlight:hover {
+          background-color: var(--shadow-checkbox-error-border-color);
+          border-color: var(--shadow-checkbox-error-border-color);
+        }
+        &:hover {
+          border-color: var(--shadow-checkbox-error-border-color);
+        }
+        &.p-focus {
+          box-shadow: none;
+          border-color: var(--shadow-checkbox-error-border-color);
+        }
+      }
+    }
+  }
+}
