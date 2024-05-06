@@ -1,0 +1,33 @@
+import React from 'react';
+import { ShadowAvatarShape, ShadowAvatarSize, ShadowClickEventOutput, ShadowTabItem } from '../../models';
+import { WindowPosition } from '../../models';
+import { ShadowNotificationItem } from '../../models';
+import './ShadowNotificationsPanel.scss';
+interface ShadowNotificationsPanelProps {
+    title?: string;
+    subtitle?: string;
+    emptyMessage?: string;
+    items?: ShadowNotificationItem[];
+    class?: string;
+    style?: any;
+    height?: string;
+    width?: string;
+    inlineStyle?: object;
+    position?: string;
+    display?: boolean;
+    resizable?: boolean;
+    closable?: boolean;
+    customPosition?: WindowPosition;
+    tabs?: ShadowTabItem[];
+    avatarShape?: ShadowAvatarShape;
+    avatarSize?: ShadowAvatarSize;
+    notificationPanel?: any;
+    activeTabObj?: ShadowTabItem;
+    onOkClick?: (item: any) => void;
+    onCancelClick?: (item: any) => void;
+    onHide?: (event: any) => void;
+    onActionSelectHandler?: (event: ShadowClickEventOutput) => void;
+    onTabSelectHandler?: (tab: ShadowTabItem) => void;
+}
+declare const ShadowNotificationsPanel: ({ title, subtitle, emptyMessage, items, class: propClass, style: propStyle, height, width, inlineStyle, position, display, resizable, closable, customPosition, tabs, activeTabObj, onActionSelectHandler, avatarShape, avatarSize, notificationPanel, onOkClick, onTabSelectHandler, onCancelClick, onHide }: ShadowNotificationsPanelProps) => React.JSX.Element;
+export default ShadowNotificationsPanel;

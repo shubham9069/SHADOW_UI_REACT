@@ -1,0 +1,60 @@
+.shadow-select-button-container {
+  .sm .p-selectbutton .p-button {
+    padding: var(--shadow-select-button-sm-padding);
+    max-height: var(--shadow-select-button-sm-max-height);
+    i.pi,
+    .label {
+      font-size: var(--shadow-select-button-sm-font-size);
+      line-height: var(--shadow-select-button-sm-line-height);
+    }
+  }
+
+  .md .p-button {
+    padding: var(--shadow-select-button-md-padding);
+    max-height: var(--shadow-select-button-md-max-height);
+    i.pi {
+      font-size: var(--shadow-select-button-md-font-size);
+      line-height: var(--shadow-select-button-md-line-height);
+    }
+    .label {
+      font-size: var(--shadow-select-button-md-label-font-size);
+    }
+  }
+
+  .lg .p-button {
+    padding: var(--shadow-select-button-lg-padding);
+    max-height: var(--shadow-select-button-lg-max-height);
+    i.pi {
+      font-size: var(--shadow-select-button-lg-font-size);
+      line-height: var(--shadow-select-button-lg-line-height);
+    }
+    .label {
+      font-size: var(--shadow-select-button-lg-label-font-size);
+    }
+  }
+
+  .p-selectbutton {
+    .p-button {
+      gap: var(--shadow-select-button-gap);
+      justify-content: center;
+      align-items: center;
+      color: var(--shadow-select-button-color);
+      & .label {
+        font-weight: var(--shadow-select-button-label-font-weight);
+      }
+      &.p-highlight {
+        color: var(--shadow-select-button-highlight-color);
+        background-color: var(
+          --shadow-select-button-highlight-background-color
+        );
+        border: var(--shadow-select-button-highlight-border);
+      }
+      &.p-button:focus {
+        box-shadow:
+          0 0 0 2px #fff,
+          0 0 0 4px #74baff,
+          0 1px 2px 0 #000;
+      }
+    }
+  }
+}

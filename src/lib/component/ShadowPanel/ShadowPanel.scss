@@ -1,0 +1,85 @@
+.accordion-container {
+  border-radius: var(--shadow-panel-accordion-border-radius);
+  border: var(--shadow-panel-accordion-border);
+  background: var(--shadow-panel-accordion-background);
+
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--shadow-panel-accordion-header-padding);
+    cursor: pointer;
+    border-bottom: var(--shadow-panel-accordion-header-border-bottom);
+    .acc-header-left {
+      display: flex;
+      gap: var(--shadow-panel-accordion-header-left-gap);
+      .acc-title-container {
+        .title {
+          color: var(--shadow-panel-accordion-header-title);
+          font-weight: var(--shadow-panel-accordion-header-weight);
+          font-size: var(--shadow-panel-accordion-header-font-size);
+          line-height: var(--shadow-panel-accordion-header-line-height);
+        }
+      }
+    }
+    .header-icon {
+      display: flex;
+      align-items: center;
+      gap: var(--shadow-panel-accordion-header-icon-gap);
+      .toggle-block-icon {
+        width: var(--shadow-panel-toggle-block-icon-width);
+        height: var(--shadow-panel-toggle-block-icon-height);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--shadow-panel-toggle-block-icon-radius);
+        background: transparent;
+        border: transparent;
+        outline: none;
+        &:hover {
+          cursor: pointer;
+          color: var(--shadow-panel-toggle-block-icon-color-hover);
+          border-color: transparent;
+          background-color: var(
+            --shadow-panel-toggle-block-icon-background-hover
+          );
+        }
+        &:focus {
+          outline: 0 none;
+          outline-offset: 0;
+          box-shadow: var(--shadow-panel-toggle-block-icon-box-shadow-focus);
+        }
+      }
+    }
+  }
+
+  .accordion-content {
+    overflow: hidden;
+    max-height: auto;
+    // transition: max-height 0.3s ease-out;
+
+    &.expanded {
+      padding: var(--shadow-panel-accordion-content-padding);
+      height: 100%;
+      visibility: visible;
+      opacity: 1;
+      transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &.collapsed {
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+@keyframes slideToggle {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 100%;
+  }
+}

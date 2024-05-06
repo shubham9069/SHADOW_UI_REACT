@@ -1,0 +1,76 @@
+.message-container {
+  align-items: center;
+  .title {
+    font-size: var(--shadow-message-title-font-size);
+    font-weight: var(--shadow-message-font-weight);
+    line-height: var(--shadow-message-title-line-height);
+  }
+
+  .group-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .p-message-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content {
+    font-size: var(--shadow-message-content-font-size);
+    line-height: var(--shadow-message-content-line-height);
+  }
+
+  .message-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-container {
+    float: right;
+    margin-right: var(--shadow-message-icon-container-margin-right);
+    .pi {
+      font-size: var(--shadow-message-icon-font-size);
+    }
+  }
+
+  .content-container {
+    flex-grow: var(--shadow-message-content-container-flex-grow);
+  }
+  .closableIcon {
+    color: var(--shadow-message-times-icon) !important;
+    margin: var(--shadow-message-closable-icon-margin);
+    cursor: pointer;
+  }
+  .p-message {
+    &.p-message-error {
+      background: var(--shadow-message-surface-subtle-error);
+      border: solid var(--shadow-message-surface-error);
+      border-width: var(--shadow-message-border-width);
+      color: var(--shadow-message-text-on-subtle-error);
+      border-radius: var(--shadow-message-border-radius-spacing);
+    }
+    &.p-message-warn {
+      background: var(--shadow-message-surface-subtle-warning);
+      border: solid var(--shadow-message-surface-warning);
+      border-width: var(--shadow-message-border-width);
+      color: var(--shadow-message-text-on-subtle-warning);
+      border-radius: var(--shadow-message-border-radius-spacing);
+    }
+    &.p-message-info {
+      background: var(--shadow-message-surface-subtle-primary);
+      border: solid var(--shadow-message-surface-primary);
+      border-width: var(--shadow-message-border-width);
+      color: var(--shadow-message-text-on-subtle-primary);
+      border-radius: var(--shadow-message-border-radius-spacing);
+    }
+    &.p-message-success {
+      background: var(--shadow-message-surface-subtle-success);
+      border: solid var(--shadow-message-surface-success);
+      border-width: var(--shadow-message-border-width);
+      color: var(--shadow-message-text-on-subtle-success);
+      border-radius: var(--shadow-message-border-radius-spacing);
+    }
+  }
+}

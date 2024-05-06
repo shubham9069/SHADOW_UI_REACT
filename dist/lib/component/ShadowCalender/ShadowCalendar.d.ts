@@ -1,0 +1,33 @@
+import React from 'react';
+import './ShadowCalendar.scss';
+import { ShadowCalendarSelType, ShadowCalendarType } from '../../models';
+interface ShadowCalendarProps {
+    selectionMode?: ShadowCalendarSelType;
+    numberOfMonths?: number;
+    style?: string;
+    styleClass?: string;
+    inputStyle?: string;
+    inputStyleClass?: string;
+    placeholder?: string;
+    disabled?: boolean;
+    dateFormat?: string;
+    inline?: boolean;
+    showIcon?: boolean;
+    icon?: string;
+    showOnFocus?: boolean;
+    showWeek?: boolean;
+    panelStyleClass?: string;
+    panelStyle?: string;
+    minDate?: Date;
+    maxDate?: Date;
+    disabledDates?: Date[];
+    disabledDays?: number[];
+    type?: ShadowCalendarType;
+    value?: Date | Date[];
+    hideOnSelect?: boolean;
+    onChange?: (event: any) => void;
+    onHide?: (event: any) => void;
+    onShow?: (event: any) => void;
+}
+declare const ShadowCalendar: ({ selectionMode, numberOfMonths, style, styleClass, inputStyle, inputStyleClass, placeholder, disabled, dateFormat: propDateFormat, inline, showIcon, icon, showOnFocus, showWeek, panelStyleClass, panelStyle, minDate, maxDate, disabledDates, disabledDays, type, value: propValue, hideOnSelect, onChange, onHide, onShow }: ShadowCalendarProps) => React.JSX.Element;
+export default ShadowCalendar;

@@ -10,7 +10,7 @@
       color: var(--shadow-dialog-notification-text-color);
     }
   }
-  
+
   &.dialog-mode-primary {
     background-color: var(--shadow-dialog-default-bg-color);
     color: var(--shadow-dialog-default-text-color);
@@ -30,14 +30,17 @@
 
   &.shadow-dialog-no-footer {
     .p-dialog-content {
-      border-radius: var(--shadow-dialog-min-border-radius) var(--shadow-dialog-min-border-radius) var(--shadow-dialog-border-radius)
-        var(--shadow-dialog-border-radius);
+      border-radius: var(--shadow-dialog-min-border-radius)
+        var(--shadow-dialog-min-border-radius)
+        var(--shadow-dialog-border-radius) var(--shadow-dialog-border-radius);
     }
   }
 
   &.shadow-dialog-no-header {
     .p-dialog-content {
-      border-radius: var(--shadow-dialog-border-radius) var(--shadow-dialog-border-radius) var(--shadow-dialog-min-border-radius)
+      border-radius: var(--shadow-dialog-border-radius)
+        var(--shadow-dialog-border-radius)
+        var(--shadow-dialog-min-border-radius)
         var(--shadow-dialog-min-border-radius);
     }
   }
@@ -110,8 +113,9 @@
     padding: var(--shadow-dialog-min-padding);
 
     .footer {
-      border-radius: var(--shadow-dialog-min-border-radius) var(--shadow-dialog-min-border-radius) var(--shadow-dialog-border-radius)
-        var(--shadow-dialog-border-radius);
+      border-radius: var(--shadow-dialog-min-border-radius)
+        var(--shadow-dialog-min-border-radius)
+        var(--shadow-dialog-border-radius) var(--shadow-dialog-border-radius);
       padding: var(--shadow-dialog-default-padding);
 
       img {

@@ -1,0 +1,60 @@
+.shadow-text-area {
+  .text-area-header {
+    font-size: var(--shadow-input-textarea-header-font-size);
+    font-weight: var(--shadow-input-textarea-header-font-weight-regular);
+    line-height: var(--shadow-input-textarea-header-font-line-height);
+    margin-bottom: var(--shadow-input-textarea-header-margin-bottom);
+    color: var(--shadow-input-textarea-header-color);
+  }
+  textarea {
+    &.p-inputtext {
+      font-size: var(--shadow-input-textarea-font-size);
+      font-weight: var(--shadow-input-textarea-font-weight-regular);
+      line-height: var(--shadow-input-textarea-font-line-height);
+      border-radius: 3px;
+    }
+    &.small {
+      padding: var(--shadow-input-textarea-padding-small);
+      font-size: var(--shadow-input-textarea-size-small);
+      &::placeholder {
+        font-size: var(--shadow-input-textarea-placeholder-size-small);
+        color: var(--shadow-input-textarea-placeholder-grey-color);
+      }
+    }
+    &.medium {
+      padding: var(--shadow-input-textarea-padding-medium) !important;
+      font-size: var(--shadow-input-textarea-size-medium);
+      &::placeholder {
+        font-size: var(--shadow-input-textarea-placeholder-size-medium);
+        color: var(--shadow-input-textarea-placeholder-grey-color);
+      }
+    }
+    &.large {
+      padding: var(--shadow-input-textarea-padding-large) !important;
+      font-size: var(--shadow-input-textarea-size-large);
+      &::placeholder {
+        font-size: var(--shadow-input-textarea-placeholder-size-large);
+        color: var(--shadow-input-textarea-placeholder-grey-color);
+      }
+    }
+    &.error {
+      border-color: var(
+        --shadow-input-textarea-error-border-hover-border-color
+      );
+      &:focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: 0 0 0 var(--shadow-input-textarea-border-focus-box-shadow)
+          var(--shadow-input-textarea-error-border);
+        border-color: var(
+          --shadow-input-textarea-error-border-focus-border-color
+        );
+      }
+      &:hover {
+        border-color: var(
+          --shadow-input-textarea-error-border-hover-border-color
+        );
+      }
+    }
+  }
+}

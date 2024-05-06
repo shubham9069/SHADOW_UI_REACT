@@ -1,21 +1,21 @@
-.shadow-button-group-container{
-    display: flex;
+.shadow-button-group-container {
+  display: flex;
 }
-.horizontal{
-    flex-direction: row;
+.horizontal {
+  flex-direction: row;
 }
-.vertical{
-    flex-direction: column;
-}
-
-.size-sm{
-    gap: var(--shadow-button-group-size-sm-gap);
+.vertical {
+  flex-direction: column;
 }
 
-.size-md{
-    gap: var(--shadow-button-group-size-md-gap);
+.size-sm {
+  gap: var(--shadow-button-group-size-sm-gap);
 }
 
-.size-lg{
-    gap: var(--shadow-button-group-size-lg-gap);
+.size-md {
+  gap: var(--shadow-button-group-size-md-gap);
+}
+
+.size-lg {
+  gap: var(--shadow-button-group-size-lg-gap);
 }

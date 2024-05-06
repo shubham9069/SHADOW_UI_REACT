@@ -1,13 +1,17 @@
-import { ShadowButtonGroupItem, ShadowButtonSize, ShadowButtonGroupDirection } from "./button.models";
+import {
+  ShadowButtonGroupItem,
+  ShadowButtonSize,
+  ShadowButtonGroupDirection
+} from './button.models'
 
 export interface ShadowBannerItem {
-  severity: ShadowBannerSeverity;
-  summary?: string;
-  closable?: boolean;
-  buttonGroup?: ShadowButtonGroupItem[];
-  buttonSize?: ShadowButtonSize;
-  buttonGroupDirection?: ShadowButtonGroupDirection;
+  severity: ShadowBannerSeverity
+  summary?: string
+  closable?: boolean
+  buttonGroup?: ShadowButtonGroupItem[]
+  buttonSize?: ShadowButtonSize
+  buttonGroupDirection?: ShadowButtonGroupDirection
 }
 
-export type ShadowBannerSeverity = 'info' | 'success' | 'warn' | 'error';
-export type ShadowBannerTextWrap = 'ellipsis' | 'wrap';
+export type ShadowBannerSeverity = 'info' | 'success' | 'warn' | 'error'
+export type ShadowBannerTextWrap = 'ellipsis' | 'wrap'

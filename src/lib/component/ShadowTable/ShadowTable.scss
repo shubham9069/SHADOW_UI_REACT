@@ -1,0 +1,225 @@
+.shadow-table {
+  thead > tr > th {
+    background: var(--shadow-table-header-background);
+    padding: var(--shadow-table-header-padding);
+    font-size: var(--shadow-table-th-font-size);
+    font-weight: var(--shadow-table-header-font-weight);
+    line-height: var(--shadow-table-header-line-height);
+    height: var(--shadow-table-header-height);
+    color: var(--shadow-table-th-color);
+  }
+
+  .p-radiobutton .p-radiobutton-box:not(.p-disabled):not(.p-highlight):hover {
+    border-color: #0074e8;
+  }
+
+  .p-inputtext:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #a8dfff;
+    border-color: #0074e8;
+  }
+
+  tbody > tr {
+    font-size: var(--shadow-table-row-font-size);
+    color: #495057;
+    outline: none;
+
+    td {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-weight: var(--shadow-table-cell-font-weight);
+      font-size: var(--shadow-table-td-font-size);
+      line-height: var(--shadow-table-cell-line-height);
+      padding: var(--shadow-table-cell-padding) !important;
+      height: var(--shadow-table-cell-height);
+    }
+  }
+
+  .shadow-table-caption {
+    margin: var(--shadow-table-caption-margin);
+    font-size: var(--shadow-table-caption-font-size);
+  }
+  .shadow-table-global-filter-input {
+    height: var(--shadow-table-filter-height);
+    font-size: var(--shadow-table-filter-font-size);
+  }
+
+  .p-datatable .p-sortable-column:focus {
+    box-shadow: none !important;
+    outline: none;
+  }
+
+  .p-datatable .p-sortable-column.p-highlight,
+  .p-datatable .p-sortable-column.p-highlight:not(.p-sortable-disabled):hover,
+  .p-datatable
+    .p-sortable-column.p-highlight:not(.p-sortable-disabled):hover
+    .p-sortable-column-icon,
+  .p-datatable
+    .p-sortable-column:not(.p-highlight):not(.p-sortable-disabled):hover {
+    background: #e6f7ff;
+    color: #005ac2;
+  }
+
+  .p-datatable .p-datatable-thead > tr > th {
+    position: sticky;
+    top: 0;
+  }
+
+  .p-datatable .p-sortable-column .p-sortable-column-badge {
+    display: none;
+  }
+  .p-paginator {
+    justify-content: var(--shadow-table-paginator-justify-content);
+    font-size: var(--shadow-table-paginator-font-size);
+    padding: var(--shadow-table-paginator-padding);
+    border-top: var(--shadow-table-paginator-border-top);
+
+    .p-paginator-pages {
+      .p-link:focus {
+        box-shadow: 0 0 0 0.2rem #a8dfff;
+      }
+
+      .p-paginator-page.p-highlight {
+        background: var(--colorCoreBlue100);
+        border-color: var(--colorCoreBlue600);
+        color: var(--colorCoreBlue800);
+      }
+    }
+    .p-paginator-pages .p-paginator-page,
+    .p-paginator-current,
+    .p-paginator-first,
+    .p-paginator-prev,
+    .p-paginator-next,
+    .p-paginator-last {
+      min-width: var(--shadow-table-paginator-min-width);
+      height: var(--shadow-table-paginator-height);
+      font-size: small;
+    }
+
+    .p-dropdown {
+      height: var(--shadow-table-paginator-dropdown-height);
+      width: min-content !important;
+
+      &:not(.p-disabled):hover {
+        border-color: var(--shadow-checkbox-highlight-bg-color);
+      }
+      &:not(.p-disabled).p-focus {
+        box-shadow: 0 0 0 0.2rem #a8dfff;
+      }
+
+      .p-dropdown-label {
+        padding-top: var(--shadow-table-paginator-dropdown-padding);
+        font-size: small;
+      }
+    }
+    .p-dropdown-panel .p-dropdown-items {
+      padding: var(--shadow-table-dropdown-items-padding);
+
+      .p-dropdown-item {
+        font-size: small;
+        border-bottom: var(--shadow-table-dropdown-items-border);
+      }
+    }
+  }
+  .p-datatable.p-datatable-striped .p-datatable-tbody > tr:nth-child(even) {
+    background: var(--shadow-table-datatable-striped-background);
+  }
+  .p-datatable.p-datatable-striped
+    .p-datatable-tbody
+    > tr:nth-child(even).p-highlight {
+    background: var(--shadow-table-datatable-highlight-background);
+  }
+  .p-datatable.p-borderless .p-datatable-tbody > tr > td {
+    border: none;
+  }
+  .p-datatable .p-datatable-tbody > tr.p-highlight {
+    color: var(--shadow-table-datatable-highlight-font-color);
+    background: #e6f7ff !important;
+    color: inherit !important;
+    outline: none !important;
+  }
+  .p-datatable.p-datatable-selectable
+    .p-datatable-tbody
+    > tr.p-selectable-row:not(.p-highlight):not(
+      .p-datatable-emptymessage
+    ):hover {
+    background: var(--shadow-table-datatable-highlight-background);
+  }
+  .p-datatable.p-datatable-hoverable-rows
+    .p-datatable-tbody
+    > tr:not(.p-highlight):not(.p-datatable-emptymessage):hover {
+    background: var(--shadow-table-datatable-highlight-background);
+  }
+  .p-datatable .p-datatable-tbody > tr:focus {
+    outline: none !important;
+    outline-offset: 0;
+  }
+  .p-checkbox {
+    width: var(--shadow-checkbox-width);
+    height: var(--shadow-checkbox-height);
+  &.p-highlight  {
+     .p-checkbox-box {
+      border: var(--shadow-checkbox-border);
+      border-radius: var(--shadow-checkbox-border-radius);
+      width: var(--shadow-checkbox-width);
+      height: var(--shadow-checkbox-height);
+       background-color: var(--shadow-checkbox-highlight-bg-color);
+        border-color: var(--shadow-checkbox-highlight-bg-color);
+    
+    }
+       
+      }
+   
+    &:not(.p-checkbox-disabled) {
+      .p-checkbox-box {
+        &.p-highlight:hover {
+          background-color: var(--shadow-checkbox-highlight-bg-color);
+          border-color: var(--shadow-checkbox-highlight-bg-color);
+        }
+        &:hover {
+          border-color: var(--shadow-checkbox-highlight-bg-color);
+        }
+        &.p-focus {
+          box-shadow: 0 0 0 0.2rem #a8dfff;
+          border-color: var(--shadow-checkbox-highlight-bg-color);
+        }
+      }
+    }
+  }
+  .p-radiobutton {
+   &.p-highlight {
+     .p-radiobutton-box {
+      border-color: var(--shadow-checkbox-highlight-bg-color);
+      background: var(--shadow-checkbox-highlight-bg-color);
+      &:not(.p-disabled):hover {
+        border-color: var(--shadow-checkbox-highlight-bg-color);
+        background: var(--shadow-checkbox-highlight-bg-color);
+        color: #ffffff;
+      }
+      &:not(.p-disabled):not(.p-highlight):hover {
+        border-color: var(--shadow-checkbox-highlight-bg-color);
+      }
+      &:not(.p-disabled).p-focus {
+        box-shadow: 0 0 0 0.2rem #a8dfff;
+      }
+    }
+    }
+  }
+
+  .overlay-container {
+    position: relative;
+    &:after {
+      content: "";
+      background: transparent;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  .edit-col {
+    width: 100%;
+  }
+}

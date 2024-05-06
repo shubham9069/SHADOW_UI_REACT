@@ -1,0 +1,15 @@
+.shadow-trellis-chart-container {
+  display: grid;
+  margin-bottom: var(--shadow-trellis-chrat-margin-bottom);
+}
+
+.shadow-trellis-chart-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.trellis-y-axis-title {
+  font-size: var(--shadow-trellis-chrat-y-axis-title-font-size);
+  float: right;
+  margin-top: var(--shadow-trellis-chrat-y-axis-title-margin-top);
+  margin-right: var(--shadow-trellis-chrat-y-axis-title-margin-right);
+}

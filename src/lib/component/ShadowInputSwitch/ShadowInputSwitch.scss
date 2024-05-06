@@ -1,0 +1,19 @@
+.input-switch-container {
+  .p-inputswitch {
+    &.p-focus {
+      .p-inputswitch-slider {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: 0 0 0 0.2rem #a8dfff;
+      }
+    }
+
+      &[aria-checked="true"] {
+      .p-inputswitch-slider {
+        background-color: var(--shadow-chatbox-input-search-background);
+      }
+    
+ 
+  }
+}
+}

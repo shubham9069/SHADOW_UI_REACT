@@ -1,18 +1,18 @@
-@import './base-tokens.scss';
-// these 4 scss is for demo application 
-@import '../../../node_modules/primereact/resources/themes/lara-light-indigo/theme.css';     
-@import "../../../node_modules/primereact/resources/primereact.min.css";                                       
-@import '../../../node_modules/primeicons/primeicons.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900');
-@import 'https://code.highcharts.com/css/highcharts.css';
+@import "./base-tokens.scss";
+// these 4 scss is for demo application
+// @import "../../../node_modules/primereact/resources/themes/lara-light-indigo/theme.css";
+// @import "../../../node_modules/primereact/resources/primereact.min.css";
+// @import "../../../node_modules/primeicons/primeicons.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900");
+@import "https://code.highcharts.com/css/highcharts.css";
 
 :root {
-  --default-font:"Inter";
-  
+  --default-font: "Inter";
 
   /* Stepper */
   --shadow-stepper-spinner-transform-0: translate3d(-50%, -50%, 0) rotate(0deg);
-  --shadow-stepper-spinner-transform-360: translate3d(-50%, -50%, 0) rotate(360deg);
+  --shadow-stepper-spinner-transform-360: translate3d(-50%, -50%, 0)
+    rotate(360deg);
   --shadow-stepper-step-item-wrapper-right-padding: 2rem;
   --shadow-stepper-step-line-item-sm-margin-top: 0.75rem;
   --shadow-stepper-step-line-main-height: 1px;
@@ -49,16 +49,29 @@
   --shadow-stepper-line-full-width: 100%;
   --shadow-stepper-current-step-theme-color: var(--colorSurfaceOnSubtlePrimary);
   --shadow-stepper-current-step-label-no-spinner: var(--colorSurfaceBase);
-  --shadow-stepper-current-step-btn-no-spinner-background: var(--colorSurfaceOnSubtlePrimary);
-  --shadow-stepper-current-step-btn-no-spinner-border: 1px solid var(--colorBorderPrimaryHover);
+  --shadow-stepper-current-step-btn-no-spinner-background: var(
+    --colorSurfaceOnSubtlePrimary
+  );
+  --shadow-stepper-current-step-btn-no-spinner-border: 1px solid
+    var(--colorBorderPrimaryHover);
   --shadow-stepper-current-step-btn-spinner-background: var(--colorSurfaceBase);
   --shadow-stepper-current-step-btn-spinner-border: none;
   --shadow-stepper-current-icon-color: #000000 !important;
   --shadow-stepper-active-step-background: var(--colorSurfaceOnSubtlePrimary);
   --shadow-stepper-readonly-cursor: default;
-  --shadow-stepper-current-state-spinner-line-background: linear-gradient(90deg, var(--colorSurfaceMidTone) 50%, var(--colorSurfaceMidTone) 50%);
-  --shadow-stepper-current-state-line-background: linear-gradient(90deg, rgb(0, 90, 194) 50%, var(--colorSurfaceBasePress) 50%);
-  --shadow-stepper-upcoming-stepper-line-background: var(--colorSurfaceBasePress);
+  --shadow-stepper-current-state-spinner-line-background: linear-gradient(
+    90deg,
+    var(--colorSurfaceMidTone) 50%,
+    var(--colorSurfaceMidTone) 50%
+  );
+  --shadow-stepper-current-state-line-background: linear-gradient(
+    90deg,
+    rgb(0, 90, 194) 50%,
+    var(--colorSurfaceBasePress) 50%
+  );
+  --shadow-stepper-upcoming-stepper-line-background: var(
+    --colorSurfaceBasePress
+  );
   --shadow-stepper-upcoming-btn-background: var(--colorSurfaceOnPrimary);
   --shadow-stepper-upcoming-btn-border: 1px solid var(--colorBorderBase) !important;
   --shadow-stepper-md-step-item-button-width: 28px;
@@ -84,7 +97,8 @@
   --shadow-card-header-font-size: 14px;
   --shadow-card-header-font-weight: 600;
   --shadow-card-header-line-height: 18px;
-  --shadow-card-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --shadow-card-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.02),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   --shadow-card-border-radius: 12px;
   --shadow-card-padding: 12px;
   --shadow-card-header-container-gap: 8px;
@@ -106,7 +120,10 @@
 
   // Shadow Toolkit Sidebar
   --shadow-toolkit-sidebar-border-left: 1px solid var(--colorBorderSubtle);
-  --shadow-toolkit-sidebar-header-border-bottom: 1px solid var(--colorBorderBase);
+  --shadow-toolkit-sidebar-header-border-bottom: 1px solid
+    var(--colorCoreBlue400);
+  --shadow-toolkit-sidebar-header-bg-color: var(--colorCoreBlue800);
+  --shadow-toolkit-sidebar-header-text-color: var(--colorSurfaceBase);
   --shadow-toolkit-sidebar-header-font-size: 18px;
   --shadow-toolkit-sidebar-header-font-weight: 600;
   --shadow-toolkit-sidebar-body-padding: 12px 16px;
@@ -120,13 +137,15 @@
   --shadow-toolkit-sidebar-body-footer-gap: 16px;
 
   //Shadow Preview
-  --shadow-preview-card-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --shadow-preview-card-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.02),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   --shadow-preview-card-border-radius: 12px;
   --shadow-preview-card-background: var(--colorSurfaceBase);
   --shadow-preview-card-wrapper-gap: 16px;
   --shadow-preview-heading-container-gap: 16px;
   --shadow-preview-heading-container-padding: 12px 16px;
-  --shadow-preview-heading-container-border-bottom: 1px solid var(--colorBorderSubtle);
+  --shadow-preview-heading-container-border-bottom: 1px solid
+    var(--colorBorderSubtle);
   --shadow-preview-heading-left-container-gap: 16px;
   --shadow-preview-heading-title-container-color: var(--colorTextBase);
   --shadow-preview-heading-title-container-font: 14px;
@@ -139,7 +158,8 @@
   --shadow-preview-data-container-padding: 0px 12px 12px;
   --shadow-preview-accordion-border-radius: 6px;
   --shadow-preview-accordion-border: 1px solid var(--colorBorderBase);
-  --shadow-preview-accordion-header-border-bottom: 1px solid var(--colorBorderSubtle);
+  --shadow-preview-accordion-header-border-bottom: 1px solid
+    var(--colorBorderSubtle);
   --shadow-preview-accordion-header-padding: 12px 16px;
   --shadow-preview-accordion-header-left-gap: 16px;
   --shadow-preview-accordion-header-title: var(--colorTextSubtle);
@@ -186,15 +206,17 @@
   --shadow-input-mask-label-color: #7b818c;
   --shadow-input-mask-label-font-size: 14px;
   --shadow-input-mask-label-margin-bottom: 0.25rem;
-  --shadow-input-mask-input-right-border-radius: 3px ;
+  --shadow-input-mask-input-right-border-radius: 3px;
   --shadow-input-mask-input-left-border-radius: 0 3px 3px 0;
   --shadow-input-mask-dropdown-margin-right: 0.5rem;
   --shadow-input-mask-dropdown-item-width: 40px;
   --shadow-input-mask-dropdown-item-height: 19px;
 
   // Shadow Chatbox
+
+
   --shadow-chatbox-border-left: 1px solid var(--colorBorderSubtle);
-  --shadow-chatbox-background: linear-gradient(113.6deg, #cce3fc -12.1%, #f7f3fa 50.1%, #fffbf8 105.54%);
+  --shadow-chatbox-background: linear-gradient(to right, #414345, #232526);
   --shadow-chatbox-header-height: 64px;
   --shadow-chatbox-header-padding-left: 30px;
   --shadow-chatbox-header-gap: 15px;
@@ -251,8 +273,8 @@
   --shadow-chatbox-saved-template-head-font-weight: 600;
   --shadow-chatbox-saved-template-list-gap: 12px;
   --shadow-chatbox-saved-template-list-margin: 20px 0 0 0;
-  --shadow-chatbox-saved-template-card-background: #0468c8;
-  --shadow-chatbox-saved-template-card-border: 1px solid #0468c8;
+  --shadow-chatbox-saved-template-card-background: var(--colorCoreBlue900);
+  --shadow-chatbox-saved-template-card-border: 1px solid var(--colorCoreBlue900);;
   --shadow-chatbox-saved-template-card-border-radius: 0px 28px 28px 28px;
   --shadow-chatbox-saved-template-card-padding: 11px 18px;
   --shadow-chatbox-saved-template-card-color: var(--colorSurfaceOnPrimary);
@@ -264,15 +286,15 @@
   --shadow-chatbox-gap: 16px;
   --shadow-chatbox-container-gap: 10px;
   --shadow-chatbox-container-chat-width: 100%;
-  --shadow-chatbox-container-chat-background: #f8f9fa;
-  --shadow-chatbox-container-border: 1px solid #dee2e6;
+  --shadow-chatbox-container-chat-background: var(--colorCoreBlue900);
+  --shadow-chatbox-container-border: 1px solid var(--colorCoreBlue900);;
   --shadow-chatbox-container-border-radius: 16px 16px 0px 16px;
-  --shadow-chatbox-container-message-color: #343a40;
+  --shadow-chatbox-container-message-color: white;
   --shadow-chatbox-container-message-font-size: 14px;
   --shadow-chatbox-container-message-padding: 8px 16px 16px;
   --shadow-chatbox-chat-profile-padding: 12px 16px;
   --shadow-chatbox-chat-profile-gap: 8px;
-  --shadow-chatbox-chat-profile-border-bottom: 1px solid #dee2e6;
+  --shadow-chatbox-chat-profile-border-bottom: 1px solid var(--colorCoreBlue500);;
   --shadow-chatbox-chat-profile-height: 32px;
   --shadow-chatbox-chat-profile-width: 32px;
   --shadow-chatbox-chat-profile-border-radius: 50%;
@@ -280,12 +302,12 @@
   --shadow-chatbox-chat-profile-font-size: 14px;
   --shadow-chatbox-chat-profile-font-weight: 700;
   --shadow-chatbox-chat-profile-date-font-size: 10px;
-  --shadow-chatbox-chat-profile-date-font-color: var(--colorTextSubtle);
+  --shadow-chatbox-chat-profile-date-font-color: var(--colorCoreBlue200);;
   --shadow-chatbox-chat-profile-date-font-weight: 400;
   --shadow-chatbox-prompt-template-gap: 10px;
   --shadow-chatbox-prompt-template-width: 100%;
-  --shadow-chatbox-prompt-template-background: #0468c8;
-  --shadow-chatbox-prompt-template-border: 1px solid #0468c8;
+  --shadow-chatbox-prompt-template-background: var(--colorCoreBlue900);;
+  --shadow-chatbox-prompt-template-border: 1px solid var(--colorCoreBlue900);;
   --shadow-chatbox-prompt-template-border-radius: 0px 28px 28px 28px;
   --shadow-chatbox-prompt-template-color: var(--colorSurfaceOnPrimary);
   --shadow-chatbox-prompt-template-padding: 10px 16px;
@@ -294,12 +316,12 @@
   --shadow-chatbox-prompt-template-min-height: 40px;
   --shadow-chatbox-warpper-input-width: 100%;
   --shadow-chatbox-warpper-input-gap: 7px;
-  --shadow-chatbox-warpper-input-background: var(--colorSurfaceOnPrimary);
-  --shadow-chatbox-warpper-input-border: 1px solid var(--colorBorderBase);
+  --shadow-chatbox-warpper-input-background: var(--colorCoreBlue900);;
+  --shadow-chatbox-warpper-input-border: 1px solid var(--colorCoreBlue900);;
   --shadow-chatbox-warpper-input-border-radius: 16px 16px 0px 0px;
   --shadow-chatbox-warpper-profile-head-width: 100%;
   --shadow-chatbox-warpper-profile-head-grid-template-columns: 1fr 32px;
-  --shadow-chatbox-warpper-message-color: #495057;
+  --shadow-chatbox-warpper-message-color: white;
   --shadow-chatbox-warpper-message-font-weight: 400;
   --shadow-chatbox-warpper-message-font-size: 14px;
   --shadow-chatbox-warpper-message-padding: 8px 16px 16px;
@@ -307,13 +329,13 @@
   --shadow-chatbox-profile-img-height: 75%;
   --shadow-chatbox-form-height: 64px;
   --shadow-chatbox-form-width: 100%;
-  --shadow-chatbox-form-background: var(--colorSurfaceOnPrimary);
-  --shadow-chatbox-form-border: 1px solid var(--colorBorderSubtle);
+  --shadow-chatbox-form-background: var(--colorCoreBlue800);;
+  --shadow-chatbox-form-border: 1px solid var(--colorCoreBlue500);;
   --shadow-chatbox-form-border-radius: 9px 16px 0px 0px;
   --shadow-chatbox-form-padding: 12px;
   --shadow-chatbox-form-input-width: 100%;
   --shadow-chatbox-form-input-grid-template-columns: 40px 1fr 40px;
-  --shadow-chatbox-form-input-border: 1px solid var(--colorBorderBase);
+  --shadow-chatbox-form-input-border: 1px solid var(--colorCoreBlue800);;
   --shadow-chatbox-form-input-border-radius: 3px;
   --shadow-chatbox-form-input-chat-icon-height: 40px;
   --shadow-chatbox-form-input-chat-icon-width: 40px;
@@ -322,7 +344,12 @@
   --shadow-chatbox-form-input-chat-text-box-font-size: 16px;
   --shadow-chatbox-form-input-chat-text-box-padding: 0 10px;
   --shadow-chatbox-form-input-chat-border-radius: 5px;
-  --shadow-chatbox-form-input-chat-placeholder-color: rgba(128, 128, 128, 0.578);
+  --shadow-chatbox-form-input-chat-placeholder-color: rgba(
+    128,
+    128,
+    128,
+    0.578
+  );
   --shadow-chatbox-form-input-chat-placeholder-font-size: 14px;
   --shadow-chatbox-text-area-padding: 12px !important;
   --shadow-chatbox-text-area-font-size: 16px !important;
@@ -345,7 +372,11 @@
   --shadow-toolkit-border-left: 1px solid var(--colorBorderSubtle);
   --shadow-toolkit-group-border-bottom: 1px solid var(--colorBorderSubtle);
   --shadow-toolkit-group-gap: 5px;
-  --shadow-toolkit-icon-selected-bg: linear-gradient(90.43deg, var(--colorSurfacePrimary) 0%, var(--colorMediaPurple600) 100%);
+  --shadow-toolkit-icon-selected-bg: linear-gradient(
+    90.43deg,
+    var(--colorSurfacePrimary) 0%,
+    var(--colorMediaPurple600) 100%
+  );
   --shadow-toolkit-icon-selected-border-radius: 3px;
 
   // Shadow Tooltip
@@ -458,14 +489,18 @@
   --shadow-sidemenu-collapsed-submenu-transition: 0s;
   --shadow-sidemenu-collapsed-submenu-item-padding: 6px 15px;
   --shadow-sidemenu-collapsed-submenu-item-width: 84%;
-  --shadow-sidemenu-collapsed-submenu-item-first-background: var(--colorSurfaceOnPrimary);
+  --shadow-sidemenu-collapsed-submenu-item-first-background: var(
+    --colorSurfaceOnPrimary
+  );
   --shadow-sidemenu-collapsed-submenu-text-font-weight: 400;
   --shadow-sidemenu-collapsed-submenu-text-font-size: 14px;
   --shadow-sidemenu-collapsed-submenu-text-padding-left: 6px;
   --shadow-sidemenu-collapsed-submenu-hover-top: 0;
   --shadow-sidemenu-collapsed-submenu-hover-opacity: 1;
   --shadow-sidemenu-collapsed-submenu-hover-transition: all 0.4s ease;
-  --shadow-sidemenu-collapsed-submenu-hover-background: var(--colorCoreBlue1000);
+  --shadow-sidemenu-collapsed-submenu-hover-background: var(
+    --colorCoreBlue1000
+  );
   --shadow-sidemenu-menuitem-padding: 0px 16px 0px 16px;
   --shadow-sidemenu-menuitem-max-height: calc(100% - 400px);
   --shadow-sidemenu-menuitem-width: 100%;
@@ -479,8 +514,11 @@
   --shadow-sidemenu-menuitem-icon-margin-top: 0.2rem;
   --shadow-sidemenu-menuitem-hover-background: var(--colorCoreBlue900);
   --shadow-sidemenu-default-border-radius: 6px;
-  --shadow-sidemenu-menuitem-hover-focus-background: var(--colorCoreBlue800) !important;
-  --shadow-sidemenu-menuitem-hover-focus-border: 1px solid var(--colorBorderContrast) !important;
+  --shadow-sidemenu-menuitem-hover-focus-background: var(
+    --colorCoreBlue800
+  ) !important;
+  --shadow-sidemenu-menuitem-hover-focus-border: 1px solid
+    var(--colorBorderContrast) !important;
   --shadow-sidemenu-menuitem-hover-focus-border-radius: 6px;
   --shadow-sidemenu-menuitem-hover-submenu-top: 50%;
   --shadow-sidemenu-menuitem-hover-submenu-transform: translateY(-50%);
@@ -525,7 +563,7 @@
   --shadow-sidemenu-dropdown-active-background: var(--colorCoreBlue800);
   --shadow-sidemenu-header-menu-margin-top: -10px;
   --shadow-sidemenu-product-title-padding: 12px 18px;
-  --shadow-sidemenu-product-title-background: rgba(0, 47, 117, 0.5);
+  --shadow-sidemenu-product-title-background: var(--colorCoreBlue800);
   --shadow-sidemenu-product-name-font-style: normal;
   --shadow-sidemenu-product-name-font-size: 14px;
   --shadow-sidemenu-product-name-font-weight: 600;
@@ -536,9 +574,9 @@
   --shadow-sidemenu-search-inner-margin-top: 25px;
   --shadow-sidemenu-search-inner-padding-left: 8px;
   --shadow-sidemenu-search-inner-border: 1px solid var(--colorCoreBlue800);
-  --shadow-sidemenu-search-inner-background: rgba(0, 47, 117, 0.5);
+  --shadow-sidemenu-search-inner-background: var(--colorCoreBlue900);
   --shadow-sidemenu-search-inner-height: 40px;
-  --shadow-sidemenu-search-input-background: rgba(0, 47, 117, 0.5);
+  --shadow-sidemenu-search-input-background: "transparent";
   --shadow-sidemenu-search-input-border: none;
   --shadow-sidemenu-search-input-font-weight: 400;
   --shadow-sidemenu-search-input-font-size: 14px;
@@ -577,7 +615,8 @@
   --shadow-table-th-color: var(--colorTextBase);
   --shadow-table-sortable-column-background: var(--colorSurfaceBackground);
   --shadow-table-sortable-column-icon-color: var(--colorSurfaceDark);
-  --shadow-table-header-background: var(--colorSurfaceBackground) 0% 0% no-repeat padding-box;
+  --shadow-table-header-background: var(--colorSurfaceBackground) 0% 0%
+    no-repeat padding-box;
   --shadow-table-header-padding: 8px 16px;
   --shadow-table-header-font-weight: 600;
   --shadow-table-header-line-height: 18px;
@@ -606,7 +645,9 @@
   --shadow-table-dropdown-items-padding: 0px;
   --shadow-table-dropdown-items-border: 1px solid #dee2e6;
   --shadow-table-datatable-striped-background: var(--colorSurfaceOverlay);
-  --shadow-table-datatable-highlight-background: var(--colorSurfacePrimaryLightHover);
+  --shadow-table-datatable-highlight-background: var(
+    --colorSurfacePrimaryLightHover
+  );
   --shadow-table-datatable-highlight-font-color: var(--colorTextBase);
 
   //toolbar
@@ -643,8 +684,8 @@
 
   //Chip
   --shadow-chip-text: var(--colorTextOnSubtlePrimary);
-  --shadow-chip-remove-icon: #1d4ed8;
-  --shadow-chip-color: #343a40;
+  --shadow-chip-remove-icon: var(--colorCoreBlue500);
+  --shadow-chip-color: var(--colorCoreBlue500);;
   --shadow-chip-margin: 0px 2px 2px 2px;
   --shadow-chip-border-radius: 27px;
   --shadow-chip-background: var(--colorSurfaceSubtlePrimary);
@@ -654,9 +695,9 @@
   --shadow-chip-text-font-size: 14px;
   --shadow-chip-text-font-weight: 400;
   --shadow-chip-text-line-height: 17px;
-  --shadow-chip-text-color: var(--colorTextOnSubtlePrimary);
+  --shadow-chip-text-color: var(--colorCoreBlue500);;
   --shadow-chip-remove-icon-margin-left: 0.3rem;
-  --shadow-chip-remove-icon-color: #1d4ed8;
+  --shadow-chip-remove-icon-color: var(--colorCoreBlue600);
   --shadow-chip-remove-icon-height: 14px;
   --shadow-chip-remove-icon-width: 14px;
   --shadow-chip-overflow-count-color: var(--colorCoreBlue1000);
@@ -664,7 +705,8 @@
   --shadow-chip-overflow-font-weight: 600;
   --shadow-chip-overlay-right: 0;
   --shadow-chip-overlay-zindex: 2;
-  --shadow-chip-overlay-panel-content-background: var(--colorSurfaceOnPrimary) 0% 0% no-repeat padding-box;
+  --shadow-chip-overlay-panel-content-background: var(--colorSurfaceOnPrimary)
+    0% 0% no-repeat padding-box;
   --shadow-chip-overlay-panel-content-box-shadow: 1px 2px 5px #0000000d;
   --shadow-chip-overlay-panel-border-radius: 4px;
   --shadow-chip-overlay-panel-border: 1px solid #dfdfdf;
@@ -689,7 +731,9 @@
   --shadow-chip-primary-strong-bg-color: var(--colorSurfacePrimary);
   --shadow-chip-neutral-subdued-text-icon-color: var(--colorTextBase);
   --shadow-chip-neutral-strong-text-icon-color: var(--colorTextOnPrimary);
-  --shadow-chip-primary-subdued-text-icon-color: var(--colorTextOnSubtlePrimary);
+  --shadow-chip-primary-subdued-text-icon-color: var(
+    --colorTextOnSubtlePrimary
+  );
   --shadow-chip-primary-strong-text-icon-color: var(--colorTextContrast);
   --shadow-chip-removeable-padding: 16px 6px 16px 12px;
   --shadow-chip-removeable-text-margin-top: 0;
@@ -755,19 +799,27 @@
   //button
   --shadow-button-surface-primary: var(--colorBorderPrimary);
   --shadow-button-surface-primary_hover: var(--colorSurfacePrimaryHover);
-  --shadow-button-surface-primary-light_hover: var(--colorSurfacePrimaryLightHover);
-  --shadow-button-border-focus_primary-light: var(--colorBorderFocusPrimaryLight);
+  --shadow-button-surface-primary-light_hover: var(
+    --colorSurfacePrimaryLightHover
+  );
+  --shadow-button-border-focus_primary-light: var(
+    --colorBorderFocusPrimaryLight
+  );
   --shadow-button-surface-error: var(--colorSurfaceError);
   --shadow-button-surface-error-light_hover: var(--colorSurfaceErrorLightHover);
   --shadow-button-surface-error_hover_focus: var(--colorSurfaceErrorHover);
   --shadow-button-surface-success: var(--colorSurfaceSuccess);
-  --shadow-button-surface-success_light_hover: var(--colorSurfaceSuccessLightHover);
+  --shadow-button-surface-success_light_hover: var(
+    --colorSurfaceSuccessLightHover
+  );
   --shadow-button-surface-success_hover_focus: var(--colorSurfaceSuccessHover);
   --shadow-button-surface-warning: var(--colorSurfaceWarning);
   --shadow-button-text-warning: var(--colorTextOnWarning);
   --shadow-button-text-warning-font-color: var(--colorTextWarning);
   --shadow-button-surface-warning_hover: #d99400;
-  --shadow-button-surface-warning-light_hover: var(--colorSurfaceWarningLightHover);
+  --shadow-button-surface-warning-light_hover: var(
+    --colorSurfaceWarningLightHover
+  );
   --shadow-button-surface-warning_focus: var(--colorSurfaceOnSubtleWarning);
   --shadow-button-loading-font-size: 18px;
   --shadow-button-loading-opacity: 0;
@@ -817,10 +869,14 @@
   --shadow-button-secondary-contrast-border-radius: 3px;
   --shadow-button-secondary-destructive-border-radius: 3px;
   --shadow-button-secondary-custom-border-radius: 3px;
-  --shadow-button-secondary-brand-border: 1px solid var(--shadow-button-surface-primary);
-  --shadow-button-secondary-contrast-border: 1px solid var(--colorBorderContrast);
-  --shadow-button-secondary-contrast-border-hover: 1px solid var(--colorBorderContrast);
-  --shadow-button-secondary-destructive-border: 1px solid var(--shadow-button-surface-error);
+  --shadow-button-secondary-brand-border: 1px solid
+    var(--shadow-button-surface-primary);
+  --shadow-button-secondary-contrast-border: 1px solid
+    var(--colorBorderContrast);
+  --shadow-button-secondary-contrast-border-hover: 1px solid
+    var(--colorBorderContrast);
+  --shadow-button-secondary-destructive-border: 1px solid
+    var(--shadow-button-surface-error);
   --shadow-button-secondary-custom-border: none;
   --shadow-button-text-brand-border-radius: 3px;
   --shadow-button-text-contrast-border-radius: 3px;
@@ -937,7 +993,8 @@
   --shadow-multi-select-gap: 4px;
   --shadow-multi-select-label-font-size: 12px;
   --shadow-multi-select-label-line-height: 15px;
-  --shadow-multi-select-border: 1px solid var(--shadow-multi-select-border-color);
+  --shadow-multi-select-border: 1px solid
+    var(--shadow-multi-select-border-color);
   --shadow-multi-select-token-border-radius: 27px;
   --shadow-multi-select-token-bg-color: var(--colorSurfaceSubtlePrimary);
   --shadow-multi-select-token-text-color: var(--colorTextOnSelectedPrimary);
@@ -1021,9 +1078,14 @@
   --shadow-select-button-gap: 8px;
   --shadow-select-button-color: var(--shadow-tab-inactive-color);
   --shadow-select-button-label-font-weight: 600;
-  --shadow-select-button-highlight-color: var(--shadow-button-surface-primary_hover);
-  --shadow-select-button-highlight-background-color: var(--shadow-button-surface-primary-light_hover);
-  --shadow-select-button-highlight-border: 1px solid var(--shadow-button-surface-primary);
+  --shadow-select-button-highlight-color: var(
+    --shadow-button-surface-primary_hover
+  );
+  --shadow-select-button-highlight-background-color: var(
+    --shadow-button-surface-primary-light_hover
+  );
+  --shadow-select-button-highlight-border: 1px solid
+    var(--shadow-button-surface-primary);
 
   //Messages
   --shadow-toast-times-icon: var(--colorTextSubtle);
@@ -1112,11 +1174,19 @@
   --shadow-input-textarea-padding-large: 12px 16px 4px 16px;
   --shadow-input-textarea-border-focus-box-shadow: 3px;
   --shadow-input-textarea-default-border: var(--colorBorderBase);
-  --shadow-input-textarea-default-border-focus-border-color: var(--colorBorderPrimary);
-  --shadow-input-textarea-default-border-hover-border-color: var(--colorBorderPrimary);
+  --shadow-input-textarea-default-border-focus-border-color: var(
+    --colorBorderPrimary
+  );
+  --shadow-input-textarea-default-border-hover-border-color: var(
+    --colorBorderPrimary
+  );
   --shadow-input-textarea-error-border: var(--colorBorderFocusErrorLight);
-  --shadow-input-textarea-error-border-focus-border-color: var(--colorBorderError);
-  --shadow-input-textarea-error-border-hover-border-color: var(--colorBorderError);
+  --shadow-input-textarea-error-border-focus-border-color: var(
+    --colorBorderError
+  );
+  --shadow-input-textarea-error-border-hover-border-color: var(
+    --colorBorderError
+  );
   --shadow-input-textarea-message-error: var(--colorTextError);
   --shadow-input-textarea-message-icon-t-padding: 6px;
   --shadow-input-textarea-message-icon-b-padding: 12px;
@@ -1134,8 +1204,12 @@
   --shadow-input-group-suggestion-top: 110%;
   --shadow-input-group-border-focus-box-shadow: 1px;
   --shadow-input-group-default-border: var(--colorBorderBase);
-  --shadow-input-group-default-border-focus-border-color: var(--colorBorderPrimary);
-  --shadow-input-group-default-border-hover-border-color: var(--colorBorderPrimary);
+  --shadow-input-group-default-border-focus-border-color: var(
+    --colorBorderPrimary
+  );
+  --shadow-input-group-default-border-hover-border-color: var(
+    --colorBorderPrimary
+  );
   --shadow-input-group-error-border: var(--colorBorderFocusErrorLight);
   --shadow-input-group-error-border-focus-border-color: var(--colorBorderError);
   --shadow-input-group-error-border-hover-border-color: var(--colorBorderError);
@@ -1153,16 +1227,21 @@
   --shadow-input-group-autocomplete-border-radius: 6px;
   --shadow-input-group-autocomplete-border: 1px solid var(--colorBorderSubtle);
   --shadow-input-group-autocomplete-background: var(--colorSurfaceBase);
-  --shadow-input-group-autocomplete-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  --shadow-input-group-autocomplete-box-shadow: 0px 4px 8px 0px
+    rgba(0, 0, 0, 0.08);
   --shadow-input-group-autocomplete-suggestion-item-gap: 8px;
   --shadow-input-group-autocomplete-suggestion-item-title-font: 14px;
   --shadow-input-group-autocomplete-suggestion-item-title-line-height: 21px;
   --shadow-input-group-autocomplete-suggestion-item-title-weight: 600;
-  --shadow-input-group-autocomplete-suggestion-item-title-color: var(--colorTextBase);
+  --shadow-input-group-autocomplete-suggestion-item-title-color: var(
+    --colorTextBase
+  );
   --shadow-input-group-autocomplete-suggestion-item-sub-title-font: 10px;
   --shadow-input-group-autocomplete-suggestion-item-sub-title-line-height: 12px;
   --shadow-input-group-autocomplete-suggestion-item-sub-title-weight: 400;
-  --shadow-input-group-autocomplete-suggestion-item-sub-title-color: var(--colorTextSubtle);
+  --shadow-input-group-autocomplete-suggestion-item-sub-title-color: var(
+    --colorTextSubtle
+  );
   --shadow-input-group-autocomplete-width: 100%;
   --shadow-input-group-autocomplete-max-height: 100%;
 
@@ -1171,7 +1250,8 @@
   --shadow-panel-accordion-border: 1px solid var(--colorBorderBase);
   --shadow-panel-accordion-background: var(--colorSurfaceBase);
   --shadow-panel-accordion-header-padding: 12px 16px;
-  --shadow-panel-accordion-header-border-bottom: 1px solid var(--colorBorderSubtle);
+  --shadow-panel-accordion-header-border-bottom: 1px solid
+    var(--colorBorderSubtle);
   --shadow-panel-accordion-header-left-gap: 16px;
   --shadow-panel-accordion-header-title: var(--colorTextSubtle);
   --shadow-panel-accordion-header-weight: 600;
@@ -1228,7 +1308,9 @@
   --shadow-avatar-primary-strong-bg-color: var(--colorSurfacePrimary);
   --shadow-avatar-neutral-subdued-text-icon-color: var(--colorTextBase);
   --shadow-avatar-neutral-strong-text-icon-color: var(--colorTextContrast);
-  --shadow-avatar-primary-subdued-text-icon-color: var(--colorTextOnSubtlePrimary);
+  --shadow-avatar-primary-subdued-text-icon-color: var(
+    --colorTextOnSubtlePrimary
+  );
   --shadow-avatar-primary-strong-text-icon-color: var(--colorTextContrast);
   --shadow-avatar-overflow-panel-content-box-shadow: 1px 2px 5px #0000000d;
   --shadow-avatar-overflow-panel-border: 1px solid #dfdfdf;
@@ -1283,7 +1365,8 @@
   --shadow-share-popup-dialog-content-padding: 23px 0;
   --shadow-share-popup-dialog-dropdown-padding: 0;
   --shadow-share-popup-dialog-footer-padding: 16px;
-  --shadow-share-popup-dialog-footer-border-top: 1px solid var(--colorBorderSubtle);
+  --shadow-share-popup-dialog-footer-border-top: 1px solid
+    var(--colorBorderSubtle);
   --shadow-share-popup-header-font-size: 22px;
   --shadow-share-popup-header-font-weight: 700;
   --shadow-share-popup-header-font-color: #000000;
@@ -1300,7 +1383,8 @@
   --shadow-share-popup-message-input-font-size: 12px;
   --shadow-share-popup-message-input-font-weight: 400;
   --shadow-share-popup-access-user-padding: 24px 30px 24px 30px;
-  --shadow-share-popup-access-user-border-top: 1px solid var(--colorBorderSubtle);
+  --shadow-share-popup-access-user-border-top: 1px solid
+    var(--colorBorderSubtle);
   --shadow-share-popup-access-user-gap: 10px;
   --shadow-share-popup-access-margin-bottom: 50px;
   --shadow-share-popup-access-label-font-size: 16px;
@@ -1333,12 +1417,14 @@
   --shadow-calendar-passive-selection-color: var(--colorSurfaceSelectedPrimary);
   --shadow-calendar-border: 1px solid var(--shadow-calendar-border-color);
   --shadow-calendar-border-radius: 5px;
-  --shadow-calendar-focus-box-shadow: 0 0 0 0.2rem var(--shadow-calendar-passive-selection-color);
+  --shadow-calendar-focus-box-shadow: 0 0 0 0.2rem
+    var(--shadow-calendar-passive-selection-color);
   --shadow-calendar-default-font: --font-family;
   --shadow-calendar-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px 0px;
   // --shadow-calendar-border:1px solid var(--shadow-calendar-border-color;)
   // --shadow-calendar-border-radius:5px;
-  --shadow-calendar-focus-box-shadow: 0 0 0 0.2rem var(--shadow-calendar-passive-selection-color);
+  --shadow-calendar-focus-box-shadow: 0 0 0 0.2rem
+    var(--shadow-calendar-passive-selection-color);
   --shadow-calendar-secondary-background-color: #e9ecef;
   --shadow-calendar-default-padding: 16px;
   --shadow-calendar-label-padding: 0px --shadow-calendar-default-padding;
@@ -1355,12 +1441,14 @@
   --shadow-calendar-passive-opacity: 0.5;
   --shadow-calendar-item-margin: 4px;
   --shadow-calendar-item-background: white;
-  --shadow-calendar-multitable-border: 1px solid var(--shadow-calendar-border-color);
+  --shadow-calendar-multitable-border: 1px solid
+    var(--shadow-calendar-border-color);
   --shadow-calendar-label-font-weight: bold;
   --shadow-calendar-item-border-raduis: 50%;
   --shadow-calendar-clickable-item: pointer;
-  --shadow-calendar-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  --shadow-calendar-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   --shadow-calendar-button-padding: 5px;
   --shadow-calendar-passive-date-color: var(--colorTextBase);
   --shadow-calendar-week-item-color: var(--colorTextSubtle);
@@ -1371,7 +1459,8 @@
   --shadow-notification-panel-content-title-size: 14px;
   --shadow-notification-item-margin: 16px 0px;
   --shadow-notification-item-container-padding: 16px 0;
-  --shadow-notification-item-container-border: 1px solid var(--colorBorderSubtle);
+  --shadow-notification-item-container-border: 1px solid
+    var(--colorBorderSubtle);
   --shadow-notification-item-border-radius: 0px;
   --shadow-notification-item-border: 1px solid var(--colorBorderSubtle);
   --shadow-notification-item-default-margin: 8px;
@@ -1379,7 +1468,7 @@
   --shadow-notification-item-icon-width: 48px;
   --shadow-notification-item-action-bar-margin: 16px;
   --shadow-notification-item-title-size: 14px;
-  --shadow-notification-item-title-color: #318ded;
+  --shadow-notification-item-title-color:var(--colorCoreBlue800);
   --shadow-notification-item-subtitle-color: var(--colorTextSubtle);
   --shadow-notification-item-title-weight: 700;
   --shadow-notification-item-content-width: 100%;

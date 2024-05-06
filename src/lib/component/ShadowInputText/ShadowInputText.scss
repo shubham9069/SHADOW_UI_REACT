@@ -1,0 +1,61 @@
+.shadow-input-text {
+  input,
+  p-inputnumber,
+  .p-inputnumber {
+    width: var(--shadow-input-text-width);
+  }
+
+  .p-inputtext,
+  .p-inputnumber {
+    &:enabled {
+      &:hover {
+        border-color: var(--shadow-button-surface-primary);
+      }
+      &:focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: 0 0 0 0.2rem #a8dfff;
+        border-color: var(--shadow-button-surface-primary);
+      }
+    }
+  }
+
+  .helper-text,
+  .error-text,
+  .input-label {
+    display: block;
+  }
+
+  .p-input-icon-left,
+  .p-input-icon-right {
+    display: block;
+  }
+
+  .error {
+    border-color: var(--shadow-input-text-error-color);
+  }
+
+  .error-text {
+    color: var(--shadow-input-text-error-color);
+    font-size: var(--shadow-input-text-label-font-size);
+    margin-top: var(--shadow-input-text-helper-error-text-margin-top);
+    display: flex;
+    align-items: center;
+    gap: var(--shadow-input-text-error-gap);
+    i {
+      font-size: var(--shadow-input-text-label-font-size);
+    }
+  }
+
+  .input-label {
+    color: var(--shadow-input-text-label-color);
+    margin-bottom: var(--shadow-input-text-helper-margin-bottom);
+    font-size: var(--shadow-input-text-label-font-size);
+  }
+
+  .helper-text {
+    font-size: var(--shadow-input-text-label-font-size);
+    color: var(--shadow-input-text-label-color);
+    margin-top: var(--shadow-input-text-helper-margin-top);
+  }
+}

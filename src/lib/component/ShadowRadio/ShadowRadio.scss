@@ -1,0 +1,87 @@
+.radio-container {
+  .radio-buttons {
+    &.vertical {
+      display: flex !important;
+      flex-direction: column;
+    }
+
+    &.horizontal {
+      display: flex !important;
+      flex-direction: row;
+    }
+    .radio-content {
+      display: flex;
+      align-items: center;
+      padding: var(--shadow-radio-btn-radio-content-padding);
+      .p-radiobutton {
+        margin-right: var(--shadow-radio-btn-margin-right);
+        &.error {
+             &[data-p-checked="true"]>.p-radiobutton-box { 
+
+              border-color: var(--shadow-radio-btn-border-error) !important;
+              background: var(--shadow-radio-btn-surfaace-error) !important;
+            }
+          .p-radiobutton-box {
+            border: var(--shadow-radio-btn-border-width) solid
+              var(--shadow-radio-btn-border-base-color);
+         
+            &:hover {
+              border-color: var(--shadow-radio-btn-border-error) !important;
+            }
+            &:not(.p-disabled).p-focus {
+              border: none !important;
+              box-shadow: none !important;
+            }
+          }
+        }
+        &.default {
+             &[data-p-checked="true"] > .p-radiobutton-box  {
+              border-color: var(--shadow-radio-btn-border-primary) !important;
+              background: var(--shadow-radio-btn-surface-primary) !important;
+            }
+          .p-radiobutton-box {
+            &:hover {
+              border-color: var(--shadow-radio-btn-border-primary) !important;
+            }
+            &:not(.p-disabled).p-focus {
+              border: none !important;
+              box-shadow: none !important;
+            }
+          }
+        }
+      }
+    }
+    .content-label {
+      font-weight: var(--shadow-radio-btn-font-weight-regular);
+      font-size: var(--shadow-radio-btn-font-size-paragraph-medium);
+      color: var(--shadow-radio-btn-label-color);
+      line-height: var(--shadow-radio-btn-font-line-height);
+    }
+  }
+  .messageContainer {
+    .message-helper {
+      color: var(--shadow-radio-btn-message-helper) !important;
+    }
+
+    .message-error {
+      color: var(--shadow-radio-btn-message-error) !important;
+    }
+
+    .message-warning {
+      color: var(--shadow-radio-btn-message-warning) !important;
+    }
+    .messageIcon {
+      padding: var(--shadow-radio-btn-message-icon-padding);
+      font-size: var(--shadow-radio-btn-message-icon-font-size) !important;
+      .pi {
+        font-size: var(--shadow-radio-btn-message-icon-size);
+      }
+    }
+    .message-label {
+      margin-left: var(--shadow-radio-btn-message-margin-left);
+      font-size: var(--shadow-radio-btn-message-label-font-size);
+      font-weight: var(--shadow-radio-btn-font-weight-regular);
+      line-height: var(--shadow-radio-btn-font-line-height);
+    }
+  }
+}

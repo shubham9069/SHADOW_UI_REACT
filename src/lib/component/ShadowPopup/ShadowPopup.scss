@@ -1,0 +1,76 @@
+.shadow-popup-model {
+  width: 50%;
+  .p-dialog-header {
+    padding: var(--shadow-pop-up-dialog-header-padding);
+    background: transparent linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%) 0%
+      0% no-repeat padding-box;
+    color: var(--shadow-pop-up-dialog-header-color);
+    font-size: medium;
+    min-height: var(--shadow-pop-up-dialog-min-height);
+  }
+
+  .p-dialog-content {
+    padding: var(--shadow-pop-up-dialog-content-padding);
+    font-size: var(--shadow-pop-up-dialog-content-font-size);
+
+    .text-success {
+      color: #26ae60;
+    }
+
+    .text-info {
+      color: #3377de;
+    }
+
+    .text-error {
+      color: #dc3545;
+    }
+  }
+
+  .p-dialog-footer {
+    padding: 0;
+
+    .footer {
+      padding: var(--shadow-pop-up-dialog-footer-padding);
+      background: transparent linear-gradient(0deg, #ffffff 0%, #f6f6f6 100%) 0%
+        0% no-repeat padding-box;
+      border: var(--shadow-pop-up-dialog-footer-border) solid
+        var(--shadow-pop-up-dialog-footer-border-color);
+      border-radius: var(--shadow-pop-up-dialog-footer-border-radius);
+    }
+
+    .action {
+      font-size: small;
+      cursor: pointer;
+      background: transparent linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%)
+        0% 0% no-repeat padding-box;
+      border: var(--shadow-pop-up-dialog-action-border) solid
+        var(--shadow-pop-up-dialog-action-border-color);
+      border-radius: var(--shadow-pop-up-dialog-action-border-radius);
+      color: var(--shadow-pop-up-dialog-action-color);
+      padding: var(--shadow-pop-up-dialog-action-padding);
+      margin-left: var(--shadow-pop-up-dialog-action-margin-left);
+
+      &.blue {
+        background: transparent
+          linear-gradient(180deg, #54acf3 0%, #3377de 100%) 0% 0% no-repeat
+          padding-box;
+        color: var(--shadow-pop-up-dialog-action-blue-color);
+        border: none;
+      }
+
+      &.disabled {
+        pointer-events: none;
+        opacity: var(--shadow-pop-up-dialog-action-blue-opacity);
+      }
+    }
+  }
+
+  .form-control {
+    font-family: inherit;
+    height: auto;
+    border-radius: var(--shadow-pop-up-dialog-form-control-border-radius);
+    min-width: var(--shadow-pop-up-dialog-form-control-min-width);
+    border-width: var(--shadow-pop-up-dialog-form-control-border-width);
+    padding: var(--shadow-pop-up-dialog-form-control-padding);
+  }
+}

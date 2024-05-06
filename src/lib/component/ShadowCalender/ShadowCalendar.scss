@@ -6,12 +6,12 @@
   }
   .shadow-custom-calendar-input-container input {
     border-radius: var(--shadow-calendar-border-radius);
-    &:enabled{
+    &:enabled {
       &:focus {
         box-shadow: var(--shadow-calendar-focus-box-shadow);
         border: var(--shadow-calendar-border);
       }
-      &:hover{
+      &:hover {
         border: var(--shadow-calendar-border);
       }
     }
@@ -48,7 +48,7 @@
     height: var(--shadow-calendar-titlebar-height);
     padding-bottom: calc(var(--shadow-calendar-default-padding) / 2);
 
-    .cal-change-icon{
+    .cal-change-icon {
       cursor: pointer;
       width: 20px;
       height: 20px;
@@ -56,7 +56,7 @@
       align-items: center;
       justify-content: center;
       margin: 4px;
-       i{
+      i {
         font-size: 70%;
       }
     }

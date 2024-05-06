@@ -1,78 +1,83 @@
-import React, { useMemo, useState } from "react";
-import { Button } from "primereact/button";
-import "./ShadowButton.scss";
-import { ShadowTooltipCaretAlignment, ShadowTooltipEvent, ShadowTooltipPosition, ShadowTooltipTheme, ShadowTooltipType } from "../../models";
-
+import React, { useMemo, useState } from 'react'
+import { Button } from 'primereact/button'
+import './ShadowButton.scss'
+import {
+  ShadowTooltipCaretAlignment,
+  ShadowTooltipEvent,
+  ShadowTooltipPosition,
+  ShadowTooltipTheme,
+  ShadowTooltipType
+} from '../../models'
 
 interface ShadowButtonProps {
-  loading?: boolean;
-  label?: string;
-  disabled?: boolean;
-  iconPosition?: "top" | "bottom" | "left" | "right"; // Adjust type here
-  icon?: string;
-  buttonType?: string;
-  size?: string;
-  buttonActionStyle?: string;
+  loading?: boolean
+  label?: string
+  disabled?: boolean
+  iconPosition?: 'top' | 'bottom' | 'left' | 'right' // Adjust type here
+  icon?: string
+  buttonType?: string
+  size?: string
+  buttonActionStyle?: string
 
-  tooltip?: string;
-  delay?: number;
-  tooltipPosition?: ShadowTooltipPosition;
-  tooltipTheme?: ShadowTooltipTheme;
-  tooltipEvent?: ShadowTooltipEvent;
-  tooltipWidth?: string;
-  tooltipType?: ShadowTooltipType;
-  tooltipCaretAlignment?: ShadowTooltipCaretAlignment;
+  tooltip?: string
+  delay?: number
+  tooltipPosition?: ShadowTooltipPosition
+  tooltipTheme?: ShadowTooltipTheme
+  tooltipEvent?: ShadowTooltipEvent
+  tooltipWidth?: string
+  tooltipType?: ShadowTooltipType
+  tooltipCaretAlignment?: ShadowTooltipCaretAlignment
 
-  onClick?: (arg: any) => void;
-  onButtonClick?: (arg: string) => void;
+  onClick?: (arg: any) => void
+  onButtonClick?: (arg: string) => void
 }
 
 const ShadowButton = ({
   loading = false,
-  label = "",
+  label = '',
   disabled = false,
-  iconPosition = "left",
-  icon = "",
-  buttonType = "primary",
-  size = "md",
-  buttonActionStyle = "brand",
+  iconPosition = 'left',
+  icon = '',
+  buttonType = 'primary',
+  size = 'md',
+  buttonActionStyle = 'brand',
 
-  tooltip: propTooltip = "",
+  tooltip: propTooltip = '',
   delay = 150,
-  tooltipPosition = "top",
-  tooltipTheme = "dark",
-  tooltipEvent: propTooltipEvent = "hover",
-  tooltipType = "single",
-  tooltipCaretAlignment = "center",
-  tooltipWidth = "",
+  tooltipPosition = 'top',
+  tooltipTheme = 'dark',
+  tooltipEvent: propTooltipEvent = 'hover',
+  tooltipType = 'single',
+  tooltipCaretAlignment = 'center',
+  tooltipWidth = '',
 
   onButtonClick,
-  onClick,
+  onClick
 }: ShadowButtonProps) => {
-  const [tooltip, setTooltip] = useState(propTooltip);
+  const [tooltip, setTooltip] = useState(propTooltip)
 
   const onClickEvent = (e: any) => {
-    onClick && onClick(e);
-    onButtonClick && onButtonClick(label || icon);
-  };
+    onClick && onClick(e)
+    onButtonClick && onButtonClick(label || icon)
+  }
 
   const extraClass = useMemo(() => {
     if (icon && !label) {
-      return "icon-but-not-lable";
+      return 'icon-but-not-lable'
     }
-    return "";
-  }, [icon, label]);
+    return ''
+  }, [icon, label])
 
   const getExtraClasses = () => {
-    return `${tooltipType === "multiple" ? "tooltip--multiple" : ""}`;
-  };
+    return `${tooltipType === 'multiple' ? 'tooltip--multiple' : ''}`
+  }
 
   const getButtonClassName = () => {
-    return `${tooltip && "custom-tooltip-btn"}`;
-  };
+    return `${tooltip && 'custom-tooltip-btn'}`
+  }
 
   return (
-    <div className="shadow-button-container">
+    <div className='shadow-button-container'>
       <div
         className={`${buttonType} ${buttonActionStyle} ${size} ${extraClass}`}
       >
@@ -87,9 +92,9 @@ const ShadowButton = ({
             //caretAlignment does not exist: tooltip--${tooltipPosition}--${tooltipCaretAlignment}
             className: `tooltip  tooltip--${tooltipTheme} ${getExtraClasses()}`,
             position: tooltipPosition,
-            event: propTooltipEvent === "click" ? "focus" : "hover",
+            event: propTooltipEvent === 'click' ? 'focus' : 'hover',
             showDelay: delay,
-            hideDelay: 0,
+            hideDelay: 0
           }}
           disabled={disabled}
           loading={loading}
@@ -97,8 +102,7 @@ const ShadowButton = ({
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ShadowButton;
-
+export default ShadowButton

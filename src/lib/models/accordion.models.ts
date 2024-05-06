@@ -1,1 +1,1 @@
-export type ShadowAccordionToggleIconPosition = "start" | "end";
+export type ShadowAccordionToggleIconPosition = 'start' | 'end'

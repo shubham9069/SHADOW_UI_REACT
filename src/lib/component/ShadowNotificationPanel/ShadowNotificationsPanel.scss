@@ -1,0 +1,74 @@
+.shadow-notification-panel {
+  .shadow-notification-content-title {
+    padding: var(--shadow-notification-panel-content-title-padding);
+    color: var(--shadow-notification-panel-content-title-color);
+    font-size: var(--shadow-notification-panel-content-title-size);
+  }
+  .shadow-button-container {
+    margin-right: var(--shadow-notification-item-default-margin);
+  }
+  .notification-item-container {
+    padding: var(--shadow-notification-item-container-padding);
+    border-top: var(--shadow-notification-item-container-border);
+    .p-card {
+      border-radius: var(--shadow-notification-item-border-radius);
+      border: var(--shadow-notification-item-border);
+    }
+    .notification-card {
+      display: inline-flex;
+      width: var(--shadow-notification-card-width);
+    }
+    .notification-item-content {
+      width: var(--shadow-notification-item-content-width);
+    }
+    .notification-item-body {
+      width: var(--shadow-notification-item-body-width);
+      margin: var(--shadow-notification-item-default-margin);
+    }
+    .notification-item-icon {
+      margin: var(--shadow-notification-item-default-margin);
+      img {
+        height: var(--shadow-notification-item-icon-height);
+        width: var(--shadow-notification-item-icon-width);
+      }
+    }
+    .notification-action {
+      width: var(--shadow-notification-action-width);
+      display: inline-flex;
+      margin-top: var(--shadow-notification-item-action-bar-margin);
+
+      button {
+        margin-right: var(--shadow-notification-item-action-bar-margin);
+        width: auto;
+      }
+    }
+    .notification-item-title {
+      width: var(--shadow-notification-item-title-width);
+      font-weight: var(--shadow-notification-item-title-weight);
+      font-size: var(--shadow-notification-item-title-size);
+      color: var(--shadow-notification-item-title-color);
+      margin-bottom: var(--shadow-notification-item-default-margin);
+      line-height: var(--shadow-notification-item-line-height);
+    }
+    .notification-item-subtitle {
+      width: var(--shadow-notification-item-subtitle-width);
+      font-size: var(--shadow-notification-item-title-font-size);
+      color: var(--shadow-notification-item-subtitle-color);
+      margin-bottom: var(--shadow-notification-item-default-margin);
+    }
+  }
+  .notification-panel-empty {
+    width: var(--shadow-notification-panel-empty-width);
+    font-size: var(--shadow-notification-panel-empty-font-size);
+    color: var(--shadow-notification-item-subtitle-color);
+    margin-bottom: var(--shadow-notification-item-default-margin);
+  }
+
+  .p-dialog-content {
+    padding: 0;
+  }
+}
+
+.notification-action-wrapper {
+  padding-right: var(--shadow-notification-action-wrapper-padding-right);
+}

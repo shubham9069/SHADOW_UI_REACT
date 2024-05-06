@@ -1,2 +1,2 @@
-export type ShadowCheckboxStyleType = 'default' | 'error';
-export type ShadowCheckboxType = 'default' | 'triState';
+export type ShadowCheckboxStyleType = 'default' | 'error'
+export type ShadowCheckboxType = 'default' | 'triState'

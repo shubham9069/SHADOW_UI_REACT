@@ -1,0 +1,70 @@
+.link-button {
+  color: blue;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 5px;
+  user-select: none;
+
+  &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: gray;
+  }
+}
+.preview-accordion-container {
+  .preview-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--shadow-preview-accordion-header-padding);
+    cursor: pointer;
+    .acc-header-left {
+      display: flex;
+      gap: var(--shadow-preview-accordion-header-left-gap);
+      align-items: center;
+      .acc-title-container {
+        display: flex;
+        gap: var(--shadow-preview-acc-title-container-gap);
+        align-items: center;
+        .title {
+          color: var(--shadow-preview-accordion-header-title);
+          font-weight: var(--shadow-preview-accordion-header-weight);
+          font-size: var(--shadow-preview-accordion-header-font-size);
+          line-height: var(--shadow-preview-accordion-header-line-height);
+        }
+        .switch-container {
+          display: flex;
+          align-items: center;
+          gap: var(--shadow-preview-switch-container-gap);
+          color: var(--shadow-preview-switch-container-color);
+          font-size: var(--shadow-preview-switch-container-font);
+          font-weight: var(--shadow-preview-switch-container-weight);
+        }
+      }
+    }
+    .header-icon {
+      display: flex;
+      align-items: center;
+      gap: var(--shadow-preview-accordion-header-icon-gap);
+    }
+  }
+
+  .preview-accordion-content {
+    overflow: hidden;
+    max-height: auto;
+    transition: max-height 0.3s ease-out;
+    &.expanded {
+      padding: var(--shadow-preview-accordion-content-padding);
+    }
+  }
+}
+
+.hr-divider {
+  height: var(--shadow-preview-divider-height);
+  border-color: var(--shadow-preview-divider-border-color);
+  margin-top: var(--shadow-preview-divider-margin-top);
+  margin-bottom: var(--shadow-preview-divider-margin-bottom);
+}

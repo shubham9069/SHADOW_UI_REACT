@@ -1,7 +1,7 @@
 .shadow-accordion-container {
   .p-accordion {
     .p-accordion-header {
-      .p-accordion-header-text{
+      .p-accordion-header-text {
         max-width: var(--shadow-accordion-header-content-max-width);
       }
       .p-accordion-header-link {
@@ -53,7 +53,9 @@
 
           &.end {
             .right-side-icon {
-              right: var(--shadow-accordion-header-right-side-icon-with-toggle-icon-end);
+              right: var(
+                --shadow-accordion-header-right-side-icon-with-toggle-icon-end
+              );
             }
           }
         }

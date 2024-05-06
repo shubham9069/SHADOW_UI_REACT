@@ -1,0 +1,73 @@
+.shadow-tab-menu-container {
+  .tab-view-item {
+    display: flex;
+    align-items: center;
+
+    .tab-icon {
+      margin-bottom: 0.2rem;
+      margin-right: var(--shadow-tab-input-icon-margin-right);
+    }
+
+    .tab-label {
+      cursor: pointer;
+      font-style: normal;
+      font-weight: var(--shadow-tab-label-font-weight);
+      font-size: var(--shadow-tab-label-font-size);
+      margin-right: var(--shadow-tab-label-margin-right);
+      padding: var(--shadow-tab-menuitem-link-padding);
+    }
+
+    .tab-input-icon {
+      margin-right: var(--shadow-tab-input-icon-margin-right);
+    }
+
+    .icon-container {
+      i {
+        cursor: pointer;
+        margin-left: var(--shadow-tab-icon-container-icon-margin-left);
+      }
+      &:hover {
+        color: var(--shadow-tab-text);
+      }
+    }
+  }
+}
+
+.tab-input {
+  font-weight: var(--shadow-tab-input-font-weight);
+  font-size: var(--shadow-tab-input-font-size);
+  color: var(--shadow-tab-text) !important;
+  padding: calc(var(--shadow-tab-menuitem-link-padding) - 2px) !important;
+  border-radius: var(--shadow-tab-input-border-radius);
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background: var(--shadow-tab-background) !important;
+  border-color: var(--shadow-tab-border-bottom) !important;
+  color: var(--shadow-tab-text) !important;
+}
+.p-tabview-nav .p-tabview-ink-bar{
+  background-color: var(--colorCoreBlue900);
+}
+
+.p-tabview-nav-link {
+  padding: 0 1.25rem !important;
+}
+
+.p-tabview-nav-link:not(.p-disabled):focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: none !important;
+}
+
+.p-dialog {
+  .p-dialog-content {
+    .tab-input {
+      font-weight: var(--shadow-tab-dialog-content-input-font-weight);
+      font-size: var(--shadow-tab-dialog-content-input-font-size);
+      color: var(--shadow-tab-text) !important;
+      line-height: var(--shadow-tab-dialog-content-input-line-height);
+      border-radius: var(--shadow-tab-dialog-content-input-border-radius);
+    }
+  }
+}

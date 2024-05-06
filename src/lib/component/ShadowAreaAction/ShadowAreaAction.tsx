@@ -1,63 +1,59 @@
-import React,{  useMemo } from "react";
-import { ShadowAreaActionItem } from "../../models";
-import { ShadowClickEventOutput } from '../../models';
-import "./ShadowAreaAction.scss";
-import ShadowTag from '../ShadowTag/ShadowTag';
+import React, { useMemo } from 'react'
+import { ShadowAreaActionItem } from '../../models'
+import { ShadowClickEventOutput } from '../../models'
+import './ShadowAreaAction.scss'
+import ShadowTag from '../ShadowTag/ShadowTag'
 
 interface ShadowAreaActionProps {
-  areaActionOption?: ShadowAreaActionItem;
-  areaActionHandler?: (event: ShadowClickEventOutput) => void;
+  areaActionOption?: ShadowAreaActionItem
+  areaActionHandler?: (event: ShadowClickEventOutput) => void
 }
 
 const ShadowAreaAction = ({
   areaActionOption = {
-    title: "Table Widget",
-    primaryButtonText: "Preview",
-    primaryButtonIcon: "pi pi-eye",
-    secondaryButtonText: "Pin to Board",
-    secondaryButtonIcon: "pi pi-user",
-    height: "auto",
-    width: "100%",
+    title: 'Table Widget',
+    primaryButtonText: 'Preview',
+    primaryButtonIcon: 'pi pi-eye',
+    secondaryButtonText: 'Pin to Board',
+    secondaryButtonIcon: 'pi pi-user',
+    height: 'auto',
+    width: '100%'
   },
-  areaActionHandler,
+  areaActionHandler
 }: ShadowAreaActionProps) => {
- 
   const primaryTag = useMemo(() => {
     return {
-      type: areaActionOption.primaryButtonType || "primary",
-      label: areaActionOption.primaryButtonText || "",
+      type: areaActionOption.primaryButtonType || 'primary',
+      label: areaActionOption.primaryButtonText || '',
       icon: areaActionOption.primaryButtonIcon,
-      isPill: true,
-    };
-
-  }, [areaActionOption]);
+      isPill: true
+    }
+  }, [areaActionOption])
 
   const secondaryTag = useMemo(() => {
     return {
-      type: areaActionOption.secondaryButtonType || "secondary",
-      label: areaActionOption.secondaryButtonText || "",
+      type: areaActionOption.secondaryButtonType || 'secondary',
+      label: areaActionOption.secondaryButtonText || '',
       icon: areaActionOption.secondaryButtonIcon,
-      isPill: true,
-    };;
-
-  }, [areaActionOption]);
-
+      isPill: true
+    }
+  }, [areaActionOption])
 
   const handleClick = (event: any) => {
     areaActionHandler &&
-      areaActionHandler({ data: event, context: areaActionOption });
-  };
+      areaActionHandler({ data: event, context: areaActionOption })
+  }
 
   return (
     <div
-      className="shadow-area-action-container"
+      className='shadow-area-action-container'
       style={{
         height: areaActionOption?.height,
-        width: areaActionOption?.width,
+        width: areaActionOption?.width
       }}
     >
       {areaActionOption.title && <p>{areaActionOption.title}</p>}
-      <div className="area-action-btn-group">
+      <div className='area-action-btn-group'>
         {(areaActionOption?.secondaryButtonText ||
           areaActionOption?.secondaryButtonIcon) && (
           <div className={`tag-${secondaryTag.type} tag-pill`}>
@@ -87,7 +83,7 @@ const ShadowAreaAction = ({
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ShadowAreaAction;
+export default ShadowAreaAction

@@ -1,0 +1,37 @@
+{
+  "name": "shadow-ui-react",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Shubham Kaushik",
+  "description": "undefined",
+  "homepage": "https://www.primereact.org",
+  "keywords": [
+    "React",
+    "Component",
+    "Library",
+    "Rollup",
+    "Typescript",
+    "Sass"
+  ],
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "main": "index.js",
+  "module": "index.esm.js",
+  "types": "index.d.ts",
+  "web-types": "web-types.json",
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.0"
+  },
+  "peerDependenciesMeta": {
+      "@types/react": {
+          "optional": true
+      }
+  },
+  "dependencies": {
+  },
+  "sideEffects": [
+      "**/*.css"
+  ]
+}

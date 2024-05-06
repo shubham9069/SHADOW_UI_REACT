@@ -12,16 +12,19 @@
     width: var(--shadow-checkbox-width);
     height: var(--shadow-checkbox-height);
 
-    .p-checkbox-box {
+     &.p-highlight {
+        .p-checkbox-box {
       border: var(--shadow-checkbox-border);
       border-radius: var(--shadow-checkbox-border-radius);
       width: var(--shadow-checkbox-width);
       height: var(--shadow-checkbox-height);
-      &.p-highlight {
-        background-color: var(--shadow-checkbox-highlight-bg-color);
+      background-color: var(--shadow-checkbox-highlight-bg-color);
         border-color: var(--shadow-checkbox-highlight-bg-color);
-      }
+     
     }
+        
+      }
+  
     &:not(.p-checkbox-disabled) {
       .p-checkbox-box {
         &.p-highlight:hover {

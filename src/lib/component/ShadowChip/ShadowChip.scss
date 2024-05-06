@@ -12,7 +12,7 @@
     font-style: normal;
     max-width: var(--shadow-chip-max-width);
 
-    img{
+    img {
       width: 2rem;
       height: 2rem;
     }
@@ -187,7 +187,6 @@
     }
   }
 
-
   .p-chip {
     padding: var(--shadow-chip-removeable-padding);
   }
@@ -206,7 +205,6 @@
     font-size: var(--shadow-chip-removeable-remove-icon-font-size);
   }
 }
-
 
 .shadow-chips-container.view-mode {
   .p-chip {

@@ -1,0 +1,31 @@
+import React from 'react';
+import { ShadowDialogEvent, ShadowDialogModes, ShadowFooter, WindowPosition } from '../../models';
+import './ShadowDialog.scss';
+interface ShadowDialogProps {
+    title?: string;
+    subtitle?: string;
+    closable?: boolean;
+    style?: any;
+    breakpoints?: any;
+    className?: string;
+    display?: boolean;
+    headerIcon?: string;
+    mode?: ShadowDialogModes;
+    header?: boolean;
+    footer?: ShadowFooter;
+    modal?: boolean;
+    closeOnBlur?: boolean;
+    height?: string;
+    width?: string;
+    resizable?: boolean;
+    draggable?: boolean;
+    allowContentPadding?: boolean;
+    position?: string;
+    customPosition?: WindowPosition;
+    displayChange?: (event: ShadowDialogEvent) => void;
+    handleCancel?: (event: ShadowDialogEvent) => void;
+    handleOk?: (event: ShadowDialogEvent) => void;
+    children?: React.ReactNode;
+}
+declare const ShadowDialog: ({ title, subtitle, closable, style, breakpoints, className, display, headerIcon, mode, header, footer, modal, closeOnBlur, height, width, resizable, draggable, allowContentPadding, position, customPosition, displayChange, handleCancel, handleOk, children }: ShadowDialogProps) => React.JSX.Element;
+export default ShadowDialog;

@@ -1,0 +1,35 @@
+import React from 'react';
+import { ShadowMenu, ShadowMenuState, ShadowTabItem, ShadowNotificationItem } from '../../models';
+import './ShadowSidemenu.scss';
+interface ShadowSideMenuProps {
+    width?: string;
+    height?: string;
+    menuItems?: ShadowMenu[];
+    utilityMenus?: ShadowMenu[];
+    appLogo?: string;
+    closeIcon?: string;
+    appLogoSmall?: string;
+    appName?: string;
+    productName?: string;
+    productSubHeading?: string;
+    userImage?: string;
+    userName?: string;
+    userEmail?: string;
+    showSearchBox?: boolean;
+    notifications?: ShadowNotificationItem[];
+    notificationSubtitle?: string;
+    showNotifications?: boolean;
+    EmptyNotificationMessage?: string;
+    tabList?: ShadowTabItem[];
+    activeTabValue?: ShadowTabItem;
+    notificationWidth?: string;
+    toggleMenuEvent?: (state: ShadowMenuState) => void;
+    onChangeMenu?: (menu: ShadowMenu) => void;
+    onChangeSearch?: (searchText: string) => void;
+    onConfirmNotificationClick?: (item: ShadowNotificationItem) => void;
+    onCancelNotificationClick?: (item: ShadowNotificationItem) => void;
+    onHideNotifications?: (response: any) => void;
+    children?: any;
+}
+declare const ShadowSideMenu: ({ width, height, menuItems, utilityMenus, appLogo, closeIcon, appLogoSmall, productName, productSubHeading, userImage, userName, userEmail, showSearchBox, notifications, notificationSubtitle, showNotifications, EmptyNotificationMessage, tabList, activeTabValue, notificationWidth, toggleMenuEvent, onChangeMenu, onChangeSearch, onConfirmNotificationClick, onCancelNotificationClick, onHideNotifications, children }: ShadowSideMenuProps) => React.JSX.Element;
+export default ShadowSideMenu;

@@ -1,0 +1,28 @@
+.messageContainer {
+  .messageState {
+    display: flex;
+    .message-icon {
+      margin-right: var(--shadow-inline-message-icon-margin-right);
+      font-size: var(--shadow-inline-message-icon-size);
+      padding: 2px 4px;
+    }
+    .message-label {
+      overflow-wrap: anywhere;
+      font-size: var(--shadow-inline-message-text-font-size);
+      font-weight: var(--shadow-inline-message-text-font-weight);
+      line-height: var(--shadow-inline-message-text-line-height);
+    }
+  }
+  .message-error {
+    color: var(--shadow-inline-message-text-error);
+  }
+  .message-warning {
+    color: var(--shadow-inline-message-text-warning);
+  }
+  .message-info {
+    color: var(--shadow-inline-message-text-primary);
+  }
+  .message-success {
+    color: var(--shadow-inline-message-text-success);
+  }
+}

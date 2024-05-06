@@ -1,0 +1,25 @@
+.toolkit-wrapper {
+  height: var(--shadow-toolkit-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: var(--shadow-toolkit-border-left);
+  gap: var(--shadow-toolkit-gap);
+  .toolkit-group {
+    border-bottom: var(--shadow-toolkit-group-border-bottom);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--shadow-toolkit-group-gap);
+    .toolkit-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      &.selected {
+        background: var(--shadow-toolkit-icon-selected-bg);
+        border-radius: var(--shadow-toolkit-icon-selected-border-radius);
+      }
+    }
+  }
+}

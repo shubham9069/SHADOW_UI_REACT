@@ -1,26 +1,33 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    // "jsx": "react-jsx",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationDir": "dist",
     "module": "esnext",
+    "target": "ES2022",
+    "lib": ["ES2022","dom"],
+    "sourceMap": true,
+    "jsx": "react",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+
+    "strict": true,
+    "skipLibCheck": true,
+    "emitDeclarationOnly": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    
   },
-  "include": [
-    "src"
-  ]
+
+  "include": ["src/**/*", "src/lib/components/**/*",],
+  "exclude": ["node_modules", "dist", "example", "src/**/*.test.tsx",]
 }
