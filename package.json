@@ -1,7 +1,6 @@
 {
   "name": "shadow-ui-react",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.1.0",
   "author": "Shubham Kaushik",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
